@@ -497,9 +497,9 @@ export default function Home() {
             src="/GreenCerto/bcgame.png"
             alt="BC Game"
             style={{
-              maxWidth: '140px',
-              maxHeight: '70px',
-              objectFit: 'contain',
+              maxWidth: '100%',
+              maxHeight: '100%',
+              objectFit: 'cover',
             }}
           />
         ) : (
