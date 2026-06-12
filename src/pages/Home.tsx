@@ -490,7 +490,8 @@ export default function Home() {
 
           <div className="gc-grid">
             {bookmakers.map(bookie => (
-              <div className="gc-card-logo">
+  <div key={bookie.id} className="gc-card">
+    <div className="gc-card-logo">
   {bookie.id === 0 ? (
     <img
       src="/GreenCerto/bcgame.png"
