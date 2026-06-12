@@ -489,45 +489,58 @@ export default function Home() {
           </p>
 
           <div className="gc-grid">
-            {bookmakers.map(bookie => (
-  <div key={bookie.id} className="gc-card">
-    <div className="gc-card-logo">
-  {bookie.id === 0 ? (
-    <img
-      src="/bcgame.png"
-      alt="BC Game"
-      style={{
-        maxWidth: '140px',
-        maxHeight: '70px',
-        objectFit: 'contain'
-      }}
-    />
-  ) : (
-    bookie.name.substring(0, 2).toUpperCase()
-  )}
-</div>
-                <div className="gc-card-body">
-                  <h3>{bookie.name}</h3>
-                  <p>{bookie.description}</p>
+  {bookmakers.map(bookie => (
+    <div key={bookie.id} className="gc-card">
+      <div className="gc-card-logo">
+        {bookie.id === 0 ? (
+          <img
+            src="/bcgame.png"
+            alt="BC Game"
+            style={{
+              maxWidth: '140px',
+              maxHeight: '70px',
+              objectFit: 'contain',
+            }}
+          />
+        ) : (
+          bookie.name.substring(0, 2).toUpperCase()
+        )}
+      </div>
 
-                  {bookie.isPlaceholder ? (
-                    <button className="gc-visit" onClick={() => openEditDialog(bookie.id, bookie.link)}>
-                      Editar
-                    </button>
-                  ) : (
-                    <div className="gc-card-actions">
-                      <a className="gc-visit" href={bookie.link} target="_blank" rel="noopener noreferrer">
-                        Visitar
-                      </a>
-                      <button className="gc-edit" onClick={() => openEditDialog(bookie.id, bookie.link)}>
-                        <Edit2 size={16} />
-                      </button>
-                    </div>
-                  )}
-                </div>
-              </div>
-            ))}
+      <div className="gc-card-body">
+        <h3>{bookie.name}</h3>
+        <p>{bookie.description}</p>
+
+        {bookie.isPlaceholder ? (
+          <button
+            className="gc-visit"
+            onClick={() => openEditDialog(bookie.id, bookie.link)}
+          >
+            Editar
+          </button>
+        ) : (
+          <div className="gc-card-actions">
+            <a
+              className="gc-visit"
+              href={bookie.link}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Visitar
+            </a>
+
+            <button
+              className="gc-edit"
+              onClick={() => openEditDialog(bookie.id, bookie.link)}
+            >
+              <Edit2 size={16} />
+            </button>
           </div>
+        )}
+      </div>
+    </div>
+  ))}
+</div>
 
           <div className="gc-tip">
             💡 Puedes editar cada casa de apuestas para agregar tu enlace de afiliado, resumen personalizado e información de la plataforma.
