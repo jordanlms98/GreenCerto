@@ -27,7 +27,7 @@ export default function Home() {
         i === 0
           ? 'BC.GAME combina apuestas deportivas, casino en línea y pagos rápidos en una plataforma moderna y confiable. Una excelente opción para quienes buscan diversión, variedad y practicidad en un solo lugar.'
           : 'Agrega aquí el nombre, resumen y enlace de tu casa afiliada.',
-      link: i === 0 ? 'https://bcgame.com?ref=greencerto' : '#',
+      link: i === 0 ? 'https://nobreaff.com/api/v3/offer/221?affiliate_id=67&url_id=3826' : '#',
       isPlaceholder: i !== 0,
     }))
   )
