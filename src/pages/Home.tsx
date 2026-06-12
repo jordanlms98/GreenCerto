@@ -494,7 +494,7 @@ export default function Home() {
       <div className="gc-card-logo">
         {bookie.id === 0 ? (
           <img
-            src="/GreenCerto/bcgame.png"
+            src="/GreenCerto/bcgame3.png"
             alt="BC Game"
             style={{
               maxWidth: '100%',
