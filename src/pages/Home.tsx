@@ -25,9 +25,9 @@ export default function Home() {
       name: i === 0 ? 'BC Game' : `Casa de Apuestas ${i + 1}`,
       description:
         i === 0
-          ? 'BC.GAME combina apuestas deportivas, casino en línea y pagos rápidos en una plataforma moderna y confiable. Una excelente opción para quienes buscan diversión, variedad y practicidad en un solo lugar.'
+          ? 'Plataforma de casino y apuestas deportivas para jugadores de México.'
           : 'Agrega aquí el nombre, resumen y enlace de tu casa afiliada.',
-      link: i === 0 ? 'https://nobreaff.com/api/v3/offer/221?affiliate_id=67&url_id=3826' : '#',
+      link: i === 0 ? 'https://bcgame.com?ref=greencerto' : '#',
       isPlaceholder: i !== 0,
     }))
   )
@@ -489,58 +489,33 @@ export default function Home() {
           </p>
 
           <div className="gc-grid">
-  {bookmakers.map(bookie => (
-    <div key={bookie.id} className="gc-card">
-      <div className="gc-card-logo">
-        {bookie.id === 0 ? (
-          <img
-            src="/bcgame.png"
-            alt="BC Game"
-            style={{
-              maxWidth: '140px',
-              maxHeight: '70px',
-              objectFit: 'contain',
-            }}
-          />
-        ) : (
-          bookie.name.substring(0, 2).toUpperCase()
-        )}
-      </div>
+            {bookmakers.map(bookie => (
+              <div key={bookie.id} className="gc-card">
+                <div className="gc-card-logo">
+                  {bookie.name.substring(0, 2).toUpperCase()}
+                </div>
+                <div className="gc-card-body">
+                  <h3>{bookie.name}</h3>
+                  <p>{bookie.description}</p>
 
-      <div className="gc-card-body">
-        <h3>{bookie.name}</h3>
-        <p>{bookie.description}</p>
-
-        {bookie.isPlaceholder ? (
-          <button
-            className="gc-visit"
-            onClick={() => openEditDialog(bookie.id, bookie.link)}
-          >
-            Editar
-          </button>
-        ) : (
-          <div className="gc-card-actions">
-            <a
-              className="gc-visit"
-              href={bookie.link}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Visitar
-            </a>
-
-            <button
-              className="gc-edit"
-              onClick={() => openEditDialog(bookie.id, bookie.link)}
-            >
-              <Edit2 size={16} />
-            </button>
+                  {bookie.isPlaceholder ? (
+                    <button className="gc-visit" onClick={() => openEditDialog(bookie.id, bookie.link)}>
+                      Editar
+                    </button>
+                  ) : (
+                    <div className="gc-card-actions">
+                      <a className="gc-visit" href={bookie.link} target="_blank" rel="noopener noreferrer">
+                        Visitar
+                      </a>
+                      <button className="gc-edit" onClick={() => openEditDialog(bookie.id, bookie.link)}>
+                        <Edit2 size={16} />
+                      </button>
+                    </div>
+                  )}
+                </div>
+              </div>
+            ))}
           </div>
-        )}
-      </div>
-    </div>
-  ))}
-</div>
 
           <div className="gc-tip">
             💡 Puedes editar cada casa de apuestas para agregar tu enlace de afiliado, resumen personalizado e información de la plataforma.
