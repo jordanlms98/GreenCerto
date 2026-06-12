@@ -25,7 +25,7 @@ export default function Home() {
       name: i === 0 ? 'BC Game' : `Casa de Apuestas ${i + 1}`,
       description:
         i === 0
-          ? 'Plataforma de casino y apuestas deportivas para jugadores de México.'
+          ? 'BC.GAME combina apuestas deportivas, casino en línea y pagos rápidos en una plataforma moderna y confiable. Una excelente opción para quienes buscan diversión, variedad y practicidad en un solo lugar.'
           : 'Agrega aquí el nombre, resumen y enlace de tu casa afiliada.',
       link: i === 0 ? 'https://bcgame.com?ref=greencerto' : '#',
       isPlaceholder: i !== 0,
