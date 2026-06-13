@@ -529,6 +529,7 @@ link:
 ) : (
   bookie.name.substring(0, 2).toUpperCase()
 )}
+      </div>
 
       <div className="gc-card-body">
         <h3>{bookie.name}</h3>
