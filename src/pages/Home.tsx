@@ -572,7 +572,7 @@ isPlaceholder: false,
       src="/GreenCerto/betwinner.png"
       alt="BetWinner"
       style={{
-        width: '180%',
+        width: '220%',
         height: '100%',
         objectFit: 'contain',
       }}
