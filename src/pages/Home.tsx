@@ -713,7 +713,6 @@ useEffect(() => {
             <div>
               <h4>Casas</h4>
               <ul>
-                <li><a href="#casas">BC Game</a></li>
                 <li><a href="#casas">Ver todas</a></li>
               </ul>
             </div>
@@ -721,7 +720,6 @@ useEffect(() => {
               <h4>Recursos</h4>
               <ul>
                 <li><a href="#">Guías</a></li>
-                <li><a href="#">Bonos</a></li>
                 <li><a href="#testimonios">Reviews</a></li>
               </ul>
             </div>
