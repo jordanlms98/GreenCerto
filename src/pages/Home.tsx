@@ -511,9 +511,9 @@ link:
     src="/GreenCerto/bcgame3.png"
     alt="BC Game"
     style={{
-      width: '80%',
-      height: '80%',
-      objectFit: 'cover',
+      width: '100%',
+      height: '100%',
+      objectFit: 'contain',
     }}
   />
 ) : bookie.id === 1 ? (
@@ -521,9 +521,9 @@ link:
     src="/GreenCerto/novibet.png"
     alt="Novibet"
     style={{
-      width: '80%',
-      height: '80%',
-      objectFit: 'cover',
+      width: '100%',
+      height: '100%',
+      objectFit: 'contain',
     }}
   />
 ) : (
