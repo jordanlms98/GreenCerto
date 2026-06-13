@@ -511,8 +511,8 @@ link:
     src="/GreenCerto/bcgame3.png"
     alt="BC Game"
     style={{
-      width: '100%',
-      height: '100%',
+      width: '80%',
+      height: '80%',
       objectFit: 'cover',
     }}
   />
@@ -521,8 +521,8 @@ link:
     src="/GreenCerto/novibet.png"
     alt="Novibet"
     style={{
-      width: '100%',
-      height: '100%',
+      width: '80%',
+      height: '80%',
       objectFit: 'cover',
     }}
   />
