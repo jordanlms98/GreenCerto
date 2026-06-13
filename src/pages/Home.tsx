@@ -674,6 +674,33 @@ useEffect(() => {
         </div>
       </section>
 
+      <section id="terminos" className="gc-section">
+  <div className="gc-container">
+    <h2 className="gc-section-title">Términos de Uso</h2>
+    <p className="gc-section-desc">
+      Green Certo es una guía informativa sobre plataformas de apuestas deportivas y casino online. No operamos juegos, no aceptamos depósitos y no procesamos pagos. El uso de cualquier plataforma externa es responsabilidad del usuario.
+    </p>
+  </div>
+</section>
+
+<section id="privacidad" className="gc-section">
+  <div className="gc-container">
+    <h2 className="gc-section-title">Política de Privacidad</h2>
+    <p className="gc-section-desc">
+      No recopilamos información sensible ni datos bancarios de los usuarios. Podemos utilizar enlaces externos o de afiliado para redirigir a plataformas de terceros. Recomendamos revisar las políticas de privacidad de cada sitio antes de registrarse.
+    </p>
+  </div>
+</section>
+
+<section id="contacto-info" className="gc-section">
+  <div className="gc-container">
+    <h2 className="gc-section-title">Contacto</h2>
+    <p className="gc-section-desc">
+      Para dudas, sugerencias o solicitudes relacionadas con Green Certo, puedes contactarnos a través de nuestro canal oficial de atención.
+    </p>
+  </div>
+</section>
+
       <footer id="contacto" className="gc-footer">
         <div className="gc-container">
           <div className="gc-footer-grid">
@@ -701,9 +728,9 @@ useEffect(() => {
             <div>
               <h4>Legal</h4>
               <ul>
-                <li><a href="#">Términos</a></li>
-                <li><a href="#">Privacidad</a></li>
-                <li><a href="#">Contacto</a></li>
+                <li><a href="#terminos">Términos</a></li>
+                <li><a href="#privacidad">Privacidad</a></li>
+                <li><a href="#contacto-info">Contacto</a></li>
               </ul>
             </div>
           </div>
