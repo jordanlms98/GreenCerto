@@ -69,12 +69,12 @@ isPlaceholder: false,
   const [editingLink, setEditingLink] = useState('')
   const [testimonialStart, setTestimonialStart] = useState(0)
   const testimonials: Testimonial[] = [
-    { id: 1, name: 'Carlos M.', location: 'Ciudad de México', text: 'Muy buena guía para encontrar casas confiables.', rating: 5 },
-    { id: 2, name: 'Juan P.', location: 'Guadalajara', text: 'Me ayudó a comparar opciones antes de registrarme.', rating: 5 },
-    { id: 3, name: 'Miguel R.', location: 'Monterrey', text: 'Diseño claro, directo y fácil de usar.', rating: 4 },
-    { id: 4, name: 'Roberto L.', location: 'Cancún', text: 'Encontré plataformas que no conocía.', rating: 5 },
-    { id: 5, name: 'Luis G.', location: 'Veracruz', text: 'Recomiendo revisar las casas antes de jugar.', rating: 5 },
-    { id: 6, name: 'Usuario', location: 'Tu evaluación aquí', text: 'Agrega aquí un testimonio real o print de usuario.', rating: 5, isPlaceholder: true },
+    { id: 1, name: 'Gabriela Ponce.', location: 'Ciudad de México', text: 'Muy buena guía para encontrar casas confiables.', rating: 5 },
+    { id: 2, name: 'Juan P.', location: 'Guadalajara', text: 'Este sitio me ayudó muchísimo a encontrar la casa de apuestas perfecta para mí. Las comparativas son claras, los bonos están bien explicados y no me dejé engañar por falsas promesas. Gracias por la información confiable. ¡Muy recomendado!', rating: 5 },
+    { id: 3, name: 'Claudia Oropeza Bernal.', location: 'Monterrey', text: 'BC.GAME es simplemente la mejor. Combinan apuestas deportivas, casino y pagos rápidos en una sola plataforma. El diseño es moderno, la seguridad es impecable y los bonos son realmente generosos. He probado varias casas y esta es la que más me gusta. ¡Definitivamente mi favorita!', rating: 5 },
+    { id: 4, name: 'Roberto L.', location: 'Tijuana', text: 'El sitio tiene buena información sobre las diferentes casas de apuestas. Me permitió comparar opciones y elegir la que mejor se adaptaba a mis necesidades. Podrían mejorar con más actualizaciones, pero en general muy útil.', rating: 5 },
+    { id: 5, name: 'Alan Adair.', location: 'Veracruz', text: 'Novibet me sorprendió gratamente. El bono de hasta $5.000 MXN fue increíble, y lo mejor es que el Pago Anticipado me permitió asegurar ganancias en varios partidos. La app móvil es muy rápida y el soporte 24/7 siempre está disponible.', rating: 5 },
+    { id: 6, name: 'Debanhi Dayara O.', location: 'Puebla', text: 'Finalmente encontré un sitio que realmente ayuda a elegir una buena casa de apuestas sin ser engañada. Las guías son claras, los bonos están explicados correctamente y la información es actualizada. ¡Gracias por existir!', rating: 5, isPlaceholder: true },
   ]
 useEffect(() => {
   const interval = setInterval(() => {
