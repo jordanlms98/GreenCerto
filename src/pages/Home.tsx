@@ -501,7 +501,7 @@ useEffect(() => {
     src="/logo1.png"
     alt="Green Certo"
     style={{
-      height: '100px',
+      height: '70px',
       width: 'auto'
     }}
   />
