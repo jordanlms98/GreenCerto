@@ -518,7 +518,7 @@ isPlaceholder: false,
         <div className="gc-container">
           <h2 className="gc-section-title">Casas de Apuestas Disponibles</h2>
           <p className="gc-section-desc">
-            Selecciona la casa de apuestas que deseas explorar. Aquí puedes agregar tus enlaces de afiliado, descripción y plataformas recomendadas.
+            Nuestro objetivo es ayudarte a encontrar plataformas confiables y populares, facilitando el acceso a información clara y organizada en un solo lugar.
           </p>
 
           <div className="gc-grid">
@@ -572,7 +572,7 @@ isPlaceholder: false,
       src="/GreenCerto/betwinner.png"
       alt="BetWinner"
       style={{
-        width: '220%',
+        width: '300%',
         height: '100%',
         objectFit: 'contain',
       }}
@@ -611,7 +611,7 @@ isPlaceholder: false,
 </div>
 
           <div className="gc-tip">
-            💡 Puedes editar cada casa de apuestas para agregar tu enlace de afiliado, resumen personalizado e información de la plataforma.
+            💡 Explora las mejores casas de apuestas disponibles para México y encuentra la plataforma ideal para tus preferencias.
           </div>
         </div>
       </section>
