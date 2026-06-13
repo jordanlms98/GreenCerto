@@ -528,12 +528,6 @@ export default function Home() {
             >
               Visitar
             </a>
-            <button
-              className="gc-edit"
-              onClick={() => openEditDialog(bookie.id, bookie.link)}
-            >
-              <Edit2 size={16} />
-            </button>
           </div>
         )}
       </div>
