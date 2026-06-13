@@ -20,7 +20,7 @@ interface Testimonial {
 
 export default function Home() {
   const [bookmakers, setBookmakers] = useState<Bookmaker[]>(
-    Array(10).fill(null).map((_, i) => ({
+    Array(5).fill(null).map((_, i) => ({
       id: i,
       name:
   i === 0
@@ -41,8 +41,13 @@ link:
     ? 'https://nobreaff.com/api/v3/offer/221?affiliate_id=67&url_id=3826'
     : i === 1
     ? 'https://www.novibet.mx/'
+    : i === 2
+    ? '#'
+    : i === 3
+    ? '#'
     : '#',
-      isPlaceholder: i !== 0,
+
+isPlaceholder: false,
     }))
   )
 
