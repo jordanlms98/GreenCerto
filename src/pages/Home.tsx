@@ -494,7 +494,7 @@ isPlaceholder: false,
     src="/GreenCerto/logo.png"
     alt="Green Certo"
     style={{
-      height: '50px',
+      height: '100px',
       width: 'auto'
     }}
   />
