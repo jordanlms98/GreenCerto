@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { Star } from 'lucide-react'
 
 interface Bookmaker {
@@ -67,7 +67,7 @@ isPlaceholder: false,
 
   const [editingId, setEditingId] = useState<number | null>(null)
   const [editingLink, setEditingLink] = useState('')
-
+  const [testimonialStart, setTestimonialStart] = useState(0)
   const testimonials: Testimonial[] = [
     { id: 1, name: 'Carlos M.', location: 'Ciudad de México', text: 'Muy buena guía para encontrar casas confiables.', rating: 5 },
     { id: 2, name: 'Juan P.', location: 'Guadalajara', text: 'Me ayudó a comparar opciones antes de registrarme.', rating: 5 },
@@ -76,7 +76,14 @@ isPlaceholder: false,
     { id: 5, name: 'Luis G.', location: 'Veracruz', text: 'Recomiendo revisar las casas antes de jugar.', rating: 5 },
     { id: 6, name: 'Usuario', location: 'Tu evaluación aquí', text: 'Agrega aquí un testimonio real o print de usuario.', rating: 5, isPlaceholder: true },
   ]
+useEffect(() => {
+  const interval = setInterval(() => {
+    setTestimonialStart(prev => (prev + 1) % testimonials.length)
+  }, 3000)
 
+  return () => clearInterval(interval)
+}, [testimonials.length])
+  
   const openEditDialog = (id: number, currentLink: string) => {
     setEditingId(id)
     setEditingLink(currentLink)
@@ -626,12 +633,14 @@ isPlaceholder: false,
         <div className="gc-container">
           <h2 className="gc-section-title">Lo que Dicen Nuestros Usuarios</h2>
           <p className="gc-section-desc">
-            Espacio para colocar avaliações, prints e depoimentos de usuários reais.
+            Opiniones y experiencias compartidas por jugadores que han utilizado las plataformas disponibles en nuestro sitio.
           </p>
 
           <div className="gc-test-grid">
-            {testimonials.map(testimonial => (
-              <div key={testimonial.id} className="gc-test-card">
+  {[...testimonials, ...testimonials]
+    .slice(testimonialStart, testimonialStart + 3)
+    .map((testimonial, index) => (
+      <div key={`${testimonial.id}-${index}`} className="gc-test-card">
                 <div className="gc-test-head">
                   <div>
                     <div className="gc-test-name">{testimonial.name}</div>
@@ -644,7 +653,6 @@ isPlaceholder: false,
                   </div>
                 </div>
 
-                <div className="gc-image-space">Espacio para print</div>
                 <p className="gc-quote">"{testimonial.text}"</p>
               </div>
             ))}
