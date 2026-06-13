@@ -695,7 +695,7 @@ useEffect(() => {
               <ul>
                 <li><a href="#">Guías</a></li>
                 <li><a href="#">Bonos</a></li>
-                <li><a href="#">Reviews</a></li>
+                <li><a href="#testimonios">Reviews</a></li>
               </ul>
             </div>
             <div>
