@@ -498,7 +498,7 @@ useEffect(() => {
         <div className="gc-container gc-nav-inner">
           <div className="gc-logo">
   <img
-    src="/GreenCerto/logo.png"
+    src="/logo.png"
     alt="Green Certo"
     style={{
       height: '100px',
@@ -540,7 +540,7 @@ useEffect(() => {
       <div className="gc-card-logo">
         {bookie.id === 0 ? (
   <img
-    src="/GreenCerto/bcgame3.png"
+    src="/bcgame3.png"
     alt="BC Game"
     style={{
       width: '100%',
@@ -550,7 +550,7 @@ useEffect(() => {
   />
 ) : bookie.id === 1 ? (
   <img
-    src="/GreenCerto/novibet.png"
+    src="/novibet.png"
     alt="Novibet"
     style={{
       width: '100%',
@@ -560,7 +560,7 @@ useEffect(() => {
   />
       ) : bookie.id === 2 ? (
     <img
-      src="/GreenCerto/betway.png"
+      src="/betway.png"
       alt="Betway"
       style={{
         width: '100%',
@@ -571,7 +571,7 @@ useEffect(() => {
     />
   ) : bookie.id === 3 ? (
     <img
-      src="/GreenCerto/betsson.png"
+      src="/betsson.png"
       alt="Betsson"
       style={{
         width: '100%',
@@ -582,7 +582,7 @@ useEffect(() => {
     />
   ) : bookie.id === 4 ? (
     <img
-      src="/GreenCerto/betwinner.png"
+      src="/betwinner.png"
       alt="BetWinner"
       style={{
         width: '300%',
