@@ -111,8 +111,8 @@ isPlaceholder: false,
           position: sticky;
           top: 0;
           z-index: 50;
-          background: rgba(15, 23, 42, 0.96);
-          border-bottom: 1px solid rgba(148, 163, 184, 0.18);
+          background: #ffffff;
+          border-bottom: 1px solid #e5e7eb;
           backdrop-filter: blur(10px);
         }
 
@@ -148,9 +148,9 @@ isPlaceholder: false,
         }
 
         .gc-menu a {
-          color: #cbd5e1;
+          color: #00c853;
           text-decoration: none;
-          font-weight: 500;
+          font-weight: 700;
         }
 
         .gc-menu a:hover {
