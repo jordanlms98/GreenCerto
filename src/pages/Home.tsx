@@ -41,24 +41,24 @@ description:
     : i === 1
     ? 'Novibet reúne apuestas deportivas, casino en línea y bonos de hasta $5.000 MXN en una plataforma segura y rápida. Duplica tu primer depósito, recibe apuestas gratis y giros gratis. Todo con pagos instantáneos y soporte 24/7. Diversión, recompensas y confianza en un solo lugar.'
     : i === 2
-    ? 'Betway es una plataforma internacional de apuestas deportivas y casino online.'
+    ? 'Betway combina apuestas deportivas, casino en línea y bonos de hasta $4.000 MXN en una plataforma confiable y ágil. Duplica tu primer depósito, disfruta de giros gratis y promociones semanales. Entretenimiento sin límites con pagos rápidos y atención al cliente 24/7.'
     : i === 3
-    ? 'Betsson ofrece apuestas deportivas y juegos de casino en una plataforma moderna.'
+    ? 'Betsson reúne apuestas deportivas, casino online y bonificaciones de hasta $3.000 MXN en una plataforma moderna y segura. Recibe 100% en tu primer depósito más apuestas sin riesgo. Promociones semanales, cashback y torneos con premios en efectivo. Diversión y ganancias en un solo lugar.'
     : i === 4
-    ? 'BetWinner reúne apuestas deportivas, casino y múltiples opciones de entretenimiento.'
+    ? 'Betwinner ofrece apuestas deportivas, casino en vivo y bonos de hasta $2.600 MXN con código promocional en una plataforma rápida y confiable. Duplica tu depósito, obtén giros gratis y acceso a promociones diarias. Pagos instantáneos, múltiples deportes y entretenimiento sin fin.'
     : 'Agrega aquí el nombre, resumen y enlace de tu casa afiliada.',
 
 link:
   i === 0
-    ? 'LINK_BCGAME'
+    ? 'https://nobreaff.com/api/v3/offer/221?affiliate_id=67&url_id=3826'
     : i === 1
-    ? 'LINK_NOVIBET'
+    ? 'https://oddspartners.xyz/262-14091'
     : i === 2
-    ? 'LINK_BETWAY'
+    ? 'https://betway.mx/'
     : i === 3
-    ? 'LINK_BETSSON'
+    ? 'https://www.betsson.mx/'
     : i === 4
-    ? 'LINK_BETWINNER'
+    ? 'https://bwredir.com/2XB6?p=%2Fregistration%2F'
     : '#',
 
 isPlaceholder: false,
@@ -508,7 +508,7 @@ isPlaceholder: false,
             <span>Green Certo</span> Tu Guía de Casas de Apuestas
           </h1>
           <p className="gc-subtitle">
-            Descubre las mejores plataformas de casino y apuestas deportivas verificadas y recomendadas para jugadores mexicanos.
+            Descubre algunas de las plataformas de apuestas deportivas y casino online más populares entre los jugadores mexicanos, reunidas en un solo lugar.
           </p>
           <a className="gc-button" href="#casas">Explorar Ahora</a>
         </div>
@@ -573,7 +573,7 @@ isPlaceholder: false,
       alt="BetWinner"
       style={{
         width: '300%',
-        height: '100%',
+        height: '200%',
         objectFit: 'contain',
       }}
     />
