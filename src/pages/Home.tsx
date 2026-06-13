@@ -490,9 +490,15 @@ isPlaceholder: false,
       <nav className="gc-nav">
         <div className="gc-container gc-nav-inner">
           <div className="gc-logo">
-            <div className="gc-logo-box">GC</div>
-            <span>Green Certo</span>
-          </div>
+  <img
+    src="/GreenCerto/logo.png"
+    alt="Green Certo"
+    style={{
+      height: '50px',
+      width: 'auto'
+    }}
+  />
+</div>
           <div className="gc-menu">
             <a href="#casas">Casas de Apuestas</a>
             <a href="#testimonios">Testimonios</a>
