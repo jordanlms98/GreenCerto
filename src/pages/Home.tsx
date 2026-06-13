@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { Star, Edit2 } from 'lucide-react'
+import { Star } from 'lucide-react'
 
 interface Bookmaker {
   id: number
