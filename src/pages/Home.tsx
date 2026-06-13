@@ -97,8 +97,8 @@ isPlaceholder: false,
       <style>{`
         .gc-page {
           min-height: 100vh;
-          background: linear-gradient(180deg, #0f172a 0%, #17233a 55%, #0f172a 100%);
-          color: #ffffff;
+          background: #ffffff;
+          color: #dc2626;
           font-family: Inter, Arial, sans-serif;
         }
 
@@ -184,13 +184,13 @@ isPlaceholder: false,
         }
 
         .gc-title span {
-          color: #00c853;
+          color: #dc2626;
         }
 
         .gc-subtitle {
           max-width: 760px;
           margin: 0 auto 34px;
-          color: #cbd5e1;
+          color: #dc2626;
           font-size: 21px;
           line-height: 1.6;
         }
@@ -228,7 +228,7 @@ isPlaceholder: false,
           text-align: center;
           max-width: 720px;
           margin: 0 auto 42px;
-          color: #cbd5e1;
+          color: #dc2626;
           font-size: 17px;
           line-height: 1.6;
         }
