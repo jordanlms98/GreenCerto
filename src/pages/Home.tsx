@@ -22,12 +22,26 @@ export default function Home() {
   const [bookmakers, setBookmakers] = useState<Bookmaker[]>(
     Array(10).fill(null).map((_, i) => ({
       id: i,
-      name: i === 0 ? 'BC Game' : `Casa de Apuestas ${i + 1}`,
-      description:
-        i === 0
-          ? 'BC.GAME combina apuestas deportivas, casino en línea y pagos rápidos en una plataforma moderna y confiable. Una excelente opción para quienes buscan diversión, variedad y practicidad en un solo lugar.'
-          : 'Agrega aquí el nombre, resumen y enlace de tu casa afiliada.',
-      link: i === 0 ? 'https://nobreaff.com/api/v3/offer/221?affiliate_id=67&url_id=3826' : '#',
+      name:
+  i === 0
+    ? 'BC Game'
+    : i === 1
+    ? 'Novibet'
+    : `Casa de Apuestas ${i + 1}`,
+
+description:
+  i === 0
+    ? 'BC.GAME combina apuestas deportivas, casino en línea y pagos rápidos en una plataforma moderna y confiable. Una excelente opción para quienes buscan diversión, variedad y practicidad en un solo lugar.'
+    : i === 1
+    ? 'Novibet reúne apuestas deportivas, casino en línea y bonos de hasta $5.000 MXN en una plataforma segura y rápida. Duplica tu primer depósito, recibe apuestas gratis y giros gratis. Todo con pagos instantáneos y soporte 24/7. Diversión, recompensas y confianza en un solo lugar.'
+    : 'Agrega aquí el nombre, resumen y enlace de tu casa afiliada.',
+
+link:
+  i === 0
+    ? 'https://nobreaff.com/api/v3/offer/221?affiliate_id=67&url_id=3826'
+    : i === 1
+    ? 'https://www.novibet.mx/'
+    : '#',
       isPlaceholder: i !== 0,
     }))
   )
@@ -493,19 +507,28 @@ export default function Home() {
     <div key={bookie.id} className="gc-card">
       <div className="gc-card-logo">
         {bookie.id === 0 ? (
-          <img
-            src="/GreenCerto/bcgame3.png"
-            alt="BC Game"
-            style={{
-              maxWidth: '100%',
-              maxHeight: '100%',
-              objectFit: 'cover',
-            }}
-          />
-        ) : (
-          bookie.name.substring(0, 2).toUpperCase()
-        )}
-      </div>
+  <img
+    src="/GreenCerto/bcgame3.png"
+    alt="BC Game"
+    style={{
+      width: '100%',
+      height: '100%',
+      objectFit: 'cover',
+    }}
+  />
+) : bookie.id === 1 ? (
+  <img
+    src="/GreenCerto/novibet.png"
+    alt="Novibet"
+    style={{
+      width: '100%',
+      height: '100%',
+      objectFit: 'cover',
+    }}
+  />
+) : (
+  bookie.name.substring(0, 2).toUpperCase()
+)}
 
       <div className="gc-card-body">
         <h3>{bookie.name}</h3>
