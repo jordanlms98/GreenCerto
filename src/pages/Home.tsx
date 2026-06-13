@@ -27,6 +27,12 @@ export default function Home() {
     ? 'BC Game'
     : i === 1
     ? 'Novibet'
+    : i === 2
+    ? 'Betway'
+    : i === 3
+    ? 'Betsson'
+    : i === 4
+    ? 'BetWinner'
     : `Casa de Apuestas ${i + 1}`,
 
 description:
@@ -34,17 +40,25 @@ description:
     ? 'BC.GAME combina apuestas deportivas, casino en línea y pagos rápidos en una plataforma moderna y confiable. Una excelente opción para quienes buscan diversión, variedad y practicidad en un solo lugar.'
     : i === 1
     ? 'Novibet reúne apuestas deportivas, casino en línea y bonos de hasta $5.000 MXN en una plataforma segura y rápida. Duplica tu primer depósito, recibe apuestas gratis y giros gratis. Todo con pagos instantáneos y soporte 24/7. Diversión, recompensas y confianza en un solo lugar.'
+    : i === 2
+    ? 'Betway es una plataforma internacional de apuestas deportivas y casino online.'
+    : i === 3
+    ? 'Betsson ofrece apuestas deportivas y juegos de casino en una plataforma moderna.'
+    : i === 4
+    ? 'BetWinner reúne apuestas deportivas, casino y múltiples opciones de entretenimiento.'
     : 'Agrega aquí el nombre, resumen y enlace de tu casa afiliada.',
 
 link:
   i === 0
-    ? 'https://nobreaff.com/api/v3/offer/221?affiliate_id=67&url_id=3826'
+    ? 'LINK_BCGAME'
     : i === 1
-    ? 'https://www.novibet.mx/'
+    ? 'LINK_NOVIBET'
     : i === 2
-    ? '#'
+    ? 'LINK_BETWAY'
     : i === 3
-    ? '#'
+    ? 'LINK_BETSSON'
+    : i === 4
+    ? 'LINK_BETWINNER'
     : '#',
 
 isPlaceholder: false,
@@ -531,6 +545,39 @@ isPlaceholder: false,
       objectFit: 'contain',
     }}
   />
+      ) : bookie.id === 2 ? (
+    <img
+      src="/GreenCerto/betway.png"
+      alt="Betway"
+      style={{
+        width: '100%',
+        height: '100%',
+        objectFit: 'contain',
+        padding: '12px',
+      }}
+    />
+  ) : bookie.id === 3 ? (
+    <img
+      src="/GreenCerto/betsson.png"
+      alt="Betsson"
+      style={{
+        width: '100%',
+        height: '100%',
+        objectFit: 'contain',
+        padding: '12px',
+      }}
+    />
+  ) : bookie.id === 4 ? (
+    <img
+      src="/GreenCerto/betwinner.png"
+      alt="BetWinner"
+      style={{
+        width: '100%',
+        height: '100%',
+        objectFit: 'contain',
+        padding: '12px',
+      }}
+    />
 ) : (
   bookie.name.substring(0, 2).toUpperCase()
 )}
