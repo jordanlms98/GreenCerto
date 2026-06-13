@@ -498,7 +498,7 @@ useEffect(() => {
         <div className="gc-container gc-nav-inner">
           <div className="gc-logo">
   <img
-    src="/logo.png"
+    src="/logo1.png"
     alt="Green Certo"
     style={{
       height: '100px',
