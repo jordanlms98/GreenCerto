@@ -535,7 +535,9 @@ useEffect(() => {
           </p>
 
           <div className="gc-grid">
-  {bookmakers.map(bookie => (
+  {bookmakers
+  .filter(bookie => bookie.id !== 3)
+  .map(bookie => (
     <div key={bookie.id} className="gc-card">
       <div className="gc-card-logo">
         {bookie.id === 0 ? (
