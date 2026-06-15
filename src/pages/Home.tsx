@@ -54,7 +54,7 @@ link:
     : i === 1
     ? 'https://oddspartners.xyz/262-14091'
     : i === 2
-    ? 'https://betway.mx/'
+    ? 'https://betway.mx/bwp/casino-welcome-50/es-mx/?s=bfp49683&a=spadid219108'
     : i === 3
     ? 'https://www.betsson.mx/'
     : i === 4
