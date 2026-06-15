@@ -124,8 +124,8 @@ useEffect(() => {
 }
 
 .dot-2 {
-  top: 3%;
-  right: 28%;
+  top: 12%;
+  right: 27%;
   background: #ffffff;
   box-shadow: 0 0 14px rgba(239, 68, 68, 0.9);
 }
