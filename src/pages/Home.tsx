@@ -476,7 +476,7 @@ useEffect(() => {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  background: rgba(51, 65, 85, 0.95);
+  background: #ffffff;
   border: 1px solid rgba(34, 197, 94, 0.45);
   border-radius: 50%;
   display: flex;
@@ -487,7 +487,7 @@ useEffect(() => {
 }
 
 .gc-orbit-center img {
-  width: 120px;
+  width: 140px;
   height: auto;
   object-fit: contain;
 }
@@ -609,7 +609,7 @@ useEffect(() => {
 
       <section id="casas" className="gc-section">
         <div className="gc-container">
-          <h2 className="gc-section-title">Casas de Apuestas Disponibles</h2>
+          <h2 className="gc-section-title">Encuentra tu Próxima Plataforma Favorita</h2>
           <p className="gc-section-desc">
             Nuestro objetivo es ayudarte a encontrar plataformas confiables y populares, facilitando el acceso a información clara y organizada en un solo lugar.
           </p>
@@ -632,12 +632,19 @@ useEffect(() => {
     </div>
 
     <div className="gc-orbit-item item-4">
-      <img src="/betwinner.png" alt="BetWinner" />
-    </div>
-
+  <img
+    src="/betwinner.png"
+    alt="BetWinner"
+    style={{
+      transform: 'scale(1.5)'
+    }}
+  />
+</div>
+   {/* 
     <div className="gc-orbit-item item-5">
       <img src="/betsson.png" alt="Betsson" />
     </div>
+    */}
   </div>
 </div>
 
