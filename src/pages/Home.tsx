@@ -633,7 +633,7 @@ useEffect(() => {
 
 <div className="gc-orbit-item item-4">
   <img
-    src="/betwinner.png"
+    src="/betwinner1.png"
     alt="BetWinner"
     className="betwinner-logo"
   />
@@ -696,7 +696,7 @@ useEffect(() => {
     />
   ) : bookie.id === 4 ? (
     <img
-      src="/betwinner.png"
+      src="/betwinner1.png"
       alt="BetWinner"
       style={{
         width: '300%',
