@@ -119,32 +119,32 @@ useEffect(() => {
 }
 
 .dot-1 {
-  top: 12%;
-  left: 24%;
+  top: 8%;
+  left: 50%;
 }
 
 .dot-2 {
-  top: 3%;
-  right: 27%;
+  top: 25%;
+  right: 10%;
   background: #ffffff;
   box-shadow: 0 0 14px rgba(239, 68, 68, 0.9);
 }
 
 .dot-3 {
-  top: 50%;
-  right: -7px;
+  top: 25%;
+  right: 10%;
 }
 
 .dot-4 {
-  bottom: 50%;
-  left: 24%;
+  bottom: 25%;
+  left: 10%;
   background: #ef4444;
   box-shadow: 0 0 14px rgba(239, 68, 68, 0.9);
 }
 
 .dot-5 {
-  top: 50%;
-  left: -7px;
+  top: 25%;
+  left: 10%;
 }
 
         .gc-container {
