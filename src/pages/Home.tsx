@@ -462,6 +462,99 @@ useEffect(() => {
           color: #cbd5e1;
           cursor: pointer;
         }
+        .gc-orbit-wrap {
+  position: relative;
+  width: 420px;
+  height: 420px;
+  margin: 35px auto 55px;
+}
+
+.gc-orbit-center {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(51, 65, 85, 0.95);
+  border: 1px solid rgba(34, 197, 94, 0.45);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 3;
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.25);
+}
+
+.gc-orbit-center img {
+  width: 120px;
+  height: auto;
+  object-fit: contain;
+}
+
+.gc-orbit-ring {
+  position: absolute;
+  inset: 0;
+  border: 1px solid rgba(34, 197, 94, 0.25);
+  border-radius: 50%;
+  animation: gcOrbitRotate 22s linear infinite;
+}
+
+.gc-orbit-item {
+  position: absolute;
+  width: 112px;
+  height: 58px;
+  background: #334155;
+  border: 1px solid rgba(148, 163, 184, 0.22);
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  box-shadow: 0 12px 28px rgba(0,0,0,0.18);
+}
+
+.gc-orbit-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.item-1 {
+  top: -29px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.item-2 {
+  right: -56px;
+  top: 30%;
+}
+
+.item-3 {
+  right: 18px;
+  bottom: 18px;
+}
+
+.item-4 {
+  left: 18px;
+  bottom: 18px;
+}
+
+.item-5 {
+  left: -56px;
+  top: 30%;
+}
+
+@keyframes gcOrbitRotate {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
 
         @media (max-width: 1100px) {
           .gc-grid {
@@ -533,6 +626,33 @@ useEffect(() => {
           <p className="gc-section-desc">
             Nuestro objetivo es ayudarte a encontrar plataformas confiables y populares, facilitando el acceso a información clara y organizada en un solo lugar.
           </p>
+          <div className="gc-orbit-wrap">
+  <div className="gc-orbit-center">
+    <img src="/logo1.png" alt="Green Certo" />
+  </div>
+
+  <div className="gc-orbit-ring">
+    <div className="gc-orbit-item item-1">
+      <img src="/bcgame3.png" alt="BC Game" />
+    </div>
+
+    <div className="gc-orbit-item item-2">
+      <img src="/novibet.png" alt="Novibet" />
+    </div>
+
+    <div className="gc-orbit-item item-3">
+      <img src="/betway.png" alt="Betway" />
+    </div>
+
+    <div className="gc-orbit-item item-4">
+      <img src="/betwinner.png" alt="BetWinner" />
+    </div>
+
+    <div className="gc-orbit-item item-5">
+      <img src="/betsson.png" alt="Betsson" />
+    </div>
+  </div>
+</div>
 
           <div className="gc-grid">
   {bookmakers
