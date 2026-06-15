@@ -109,6 +109,44 @@ useEffect(() => {
           font-family: Inter, Arial, sans-serif;
         }
 
+.orbit-dot {
+  position: absolute;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background: #22c55e;
+  box-shadow: 0 0 14px rgba(34, 197, 94, 0.9);
+}
+
+.dot-1 {
+  top: 12%;
+  left: 24%;
+}
+
+.dot-2 {
+  top: 12%;
+  right: 24%;
+  background: #ef4444;
+  box-shadow: 0 0 14px rgba(239, 68, 68, 0.9);
+}
+
+.dot-3 {
+  top: 50%;
+  right: -7px;
+}
+
+.dot-4 {
+  bottom: 12%;
+  left: 24%;
+  background: #ef4444;
+  box-shadow: 0 0 14px rgba(239, 68, 68, 0.9);
+}
+
+.dot-5 {
+  top: 50%;
+  left: -7px;
+}
+
         .gc-container {
           width: min(1180px, calc(100% - 32px));
           margin: 0 auto;
@@ -619,6 +657,13 @@ useEffect(() => {
   </div>
 
   <div className="gc-orbit-ring">
+
+    <span className="orbit-dot dot-1"></span>
+  <span className="orbit-dot dot-2"></span>
+  <span className="orbit-dot dot-3"></span>
+  <span className="orbit-dot dot-4"></span>
+  <span className="orbit-dot dot-5"></span>
+    
     <div className="gc-orbit-item item-1">
       <img src="/bcgame3.png" alt="BC Game" />
     </div>
