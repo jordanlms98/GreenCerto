@@ -119,32 +119,33 @@ useEffect(() => {
 }
 
 .dot-1 {
-  top: 8%;
+  top: 0%;
   left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .dot-2 {
-  top: 25%;
-  right: 10%;
-  background: #ffffff;
-  box-shadow: 0 0 14px rgba(239, 68, 68, 0.9);
+  top: 20%;
+  left: 86%;
+  transform: translate(-50%, -50%);
 }
 
 .dot-3 {
-  top: 25%;
-  right: 10%;
+  top: 70%;
+  left: 86%;
+  transform: translate(-50%, -50%);
 }
 
 .dot-4 {
-  bottom: 25%;
-  left: 10%;
-  background: #ef4444;
-  box-shadow: 0 0 14px rgba(239, 68, 68, 0.9);
+  top: 70%;
+  left: 14%;
+  transform: translate(-50%, -50%);
 }
 
 .dot-5 {
-  top: 25%;
-  left: 10%;
+  top: 20%;
+  left: 14%;
+  transform: translate(-50%, -50%);
 }
 
         .gc-container {
