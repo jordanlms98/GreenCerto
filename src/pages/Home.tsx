@@ -631,19 +631,11 @@ useEffect(() => {
       <img src="/betway.png" alt="Betway" />
     </div>
 
-    <div
-  className="gc-orbit-item item-4"
-  style={{
-    width: '300px',
-    height: '80px'
-  }}
->
+<div className="gc-orbit-item item-4">
   <img
     src="/betwinner.png"
     alt="BetWinner"
-    style={{
-      transform: 'scale(1.8)'
-    }}
+    className="betwinner-logo"
   />
 </div>
    {/* 
