@@ -528,11 +528,25 @@ useEffect(() => {
       </section>
 
       <section id="casas" className="gc-section">
-        <div className="gc-container">
-          <h2 className="gc-section-title">Casas de Apuestas Disponibles</h2>
-          <p className="gc-section-desc">
-            Nuestro objetivo es ayudarte a encontrar plataformas confiables y populares, facilitando el acceso a información clara y organizada en un solo lugar.
-          </p>
+  <div className="gc-container">
+    <h2 className="gc-section-title">Casas de Apuestas Disponibles</h2>
+
+    <p className="gc-section-desc">
+      Nuestro objetivo es ayudarte a encontrar plataformas confiables y populares, facilitando el acceso a información clara y organizada en un solo lugar.
+    </p>
+
+    <div className="orbit-section">
+      <div className="orbit-center">
+        <img src="/logo1.png" alt="Green Certo" />
+      </div>
+
+      <div className="orbit orbit-one">
+        <span>BC Game</span>
+        <span>Novibet</span>
+        <span>Betway</span>
+        <span>BetWinner</span>
+      </div>
+    </div>
 
           <div className="gc-grid">
   {bookmakers
