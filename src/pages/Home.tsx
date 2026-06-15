@@ -488,6 +488,62 @@ useEffect(() => {
             font-size: 42px;
           }
 
+.orbit-section {
+  position: relative;
+  height: 360px;
+  margin: 40px auto 60px;
+  max-width: 760px;
+}
+
+.orbit-center {
+  position: absolute;
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  background: #ffffff;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.15);
+  z-index: 3;
+}
+
+.orbit-center img {
+  width: 100px;
+  height: auto;
+}
+
+.orbit {
+  position: absolute;
+  inset: 0;
+  border: 1px solid rgba(0, 200, 83, 0.25);
+  border-radius: 50%;
+  animation: orbitSpin 18s linear infinite;
+}
+
+.orbit span {
+  position: absolute;
+  background: #ffffff;
+  color: #0f172a;
+  padding: 10px 18px;
+  border-radius: 14px;
+  font-weight: 700;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+}
+
+.orbit span:nth-child(1) { top: 0; left: 50%; transform: translateX(-50%); }
+.orbit span:nth-child(2) { right: 0; top: 50%; transform: translateY(-50%); }
+.orbit span:nth-child(3) { bottom: 0; left: 50%; transform: translateX(-50%); }
+.orbit span:nth-child(4) { left: 0; top: 50%; transform: translateY(-50%); }
+
+@keyframes orbitSpin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
           .gc-subtitle {
             font-size: 17px;
           }
