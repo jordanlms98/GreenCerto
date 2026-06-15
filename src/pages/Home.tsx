@@ -607,40 +607,29 @@ useEffect(() => {
         </div>
       </nav>
 
-     <section id="casas" className="gc-section">
-  <div className="gc-container">
-
-    <div className="gc-orbit-wrap">
-      <div className="gc-orbit-center">
-        <img src="/logo1.png" alt="Green Certo" />
-      </div>
-
-      <div className="gc-orbit-ring">
-        <div className="gc-orbit-item item-1">
-          <img src="/bcgame3.png" alt="BC Game" />
+      <section className="gc-hero">
+        <div className="gc-container">
+          <div className="gc-badge">✅ Las Mejores Casas de Apuestas Verificadas</div>
+          <h1 className="gc-title">
+            <span>Green Certo</span> Tu Guía de Casas de Apuestas
+          </h1>
+          <p className="gc-subtitle">
+            Descubre algunas de las plataformas de apuestas deportivas y casino online más populares entre los jugadores mexicanos, reunidas en un solo lugar.
+          </p>
+          <a className="gc-button" href="#casas">Explorar Ahora</a>
         </div>
+      </section>
 
-        <div className="gc-orbit-item item-2">
-          <img src="/novibet.png" alt="Novibet" />
-        </div>
-
-        <div className="gc-orbit-item item-3">
-          <img src="/betway.png" alt="Betway" />
-        </div>
-
-        <div className="gc-orbit-item item-4">
-          <img src="/betwinner.png" alt="BetWinner" />
-        </div>
-
-        <div className="gc-orbit-item item-5">
-          <img src="/betsson.png" alt="Betsson" />
-        </div>
-      </div>
-    </div>
-
-    <p className="gc-section-desc">
-      Nuestro objetivo es ayudarte a encontrar plataformas confiables y populares, facilitando el acceso a información clara y organizada en un solo lugar.
-    </p>
+      <section id="casas" className="gc-section">
+        <div className="gc-container">
+          <h2 className="gc-section-title">Casas de Apuestas Disponibles</h2>
+          <p className="gc-section-desc">
+            Nuestro objetivo es ayudarte a encontrar plataformas confiables y populares, facilitando el acceso a información clara y organizada en un solo lugar.
+          </p>
+          <div className="gc-orbit-wrap">
+  <div className="gc-orbit-center">
+    <img src="/logo1.png" alt="Green Certo" />
+  </div>
 
   <div className="gc-orbit-ring">
     <div className="gc-orbit-item item-1">
