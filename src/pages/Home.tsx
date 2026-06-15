@@ -699,8 +699,8 @@ useEffect(() => {
       src="/betwinner.png"
       alt="BetWinner"
       style={{
-        width: '100%',
-        height: '100%',
+        width: '300%',
+        height: '150%',
         objectFit: 'contain',
       }}
     />
