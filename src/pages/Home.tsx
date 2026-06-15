@@ -607,19 +607,6 @@ useEffect(() => {
         </div>
       </nav>
 
-      <section className="gc-hero">
-        <div className="gc-container">
-          <div className="gc-badge">✅ Las Mejores Casas de Apuestas Verificadas</div>
-          <h1 className="gc-title">
-            <span>Green Certo</span> Tu Guía de Casas de Apuestas
-          </h1>
-          <p className="gc-subtitle">
-            Descubre algunas de las plataformas de apuestas deportivas y casino online más populares entre los jugadores mexicanos, reunidas en un solo lugar.
-          </p>
-          <a className="gc-button" href="#casas">Explorar Ahora</a>
-        </div>
-      </section>
-
       <section id="casas" className="gc-section">
         <div className="gc-container">
           <h2 className="gc-section-title">Casas de Apuestas Disponibles</h2>
