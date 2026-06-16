@@ -107,7 +107,58 @@ useEffect(() => {
           background: linear-gradient(180deg, #0f172a 0%, #17233a 55%, #0f172a 100%);
           color: #ffffff;
           font-family: Inter, Arial, sans-serif;
+          overflow-x: hidden;
         }
+@media (max-width: 600px) {
+  .gc-container {
+    width: 100%;
+    padding: 0 16px;
+    overflow: hidden;
+  }
+
+  .gc-orbit-wrap {
+    width: 300px;
+    height: 300px;
+    margin: 30px auto 45px;
+  }
+
+  .gc-orbit-center {
+    width: 115px;
+    height: 115px;
+  }
+
+  .gc-orbit-center img {
+    width: 90px;
+  }
+
+  .gc-orbit-item {
+    width: 82px;
+    height: 46px;
+    padding: 8px;
+  }
+
+  .item-1 {
+    top: -23px;
+  }
+
+  .item-2 {
+    right: -41px;
+  }
+
+  .item-3 {
+    right: 5px;
+    bottom: 5px;
+  }
+
+  .item-4 {
+    left: 5px;
+    bottom: 5px;
+  }
+
+  .item-5 {
+    left: -41px;
+  }
+}
 
 .orbit-dot {
   position: absolute;
