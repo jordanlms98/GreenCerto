@@ -47,7 +47,7 @@ i === 0
 ? 'Brazino777 ofrece bônus de hasta 225% en tu primer depósito, con giros gratis y promociones semanales. Recibe cashback, boosters acumuladores y recompensas continuas. Apuestas deportivas y casino en una plataforma confiable con pagos rápidos.'
 : i === 6
 ? 'BigBola te da bônus de bienvenida sin depósito de $400 MXN, más bonificaciones en tus primeros depósitos. Disfruta de apuestas deportivas, casino online y promociones de cumpleaños. Seguridad SEGOB y entretenimiento sin límites.'
-: 'Agrega aquí el nombre, resumen y enlace de tu casa afiliada.'
+: 'Agrega aquí el nombre, resumen y enlace de tu casa afiliada.',
 
 link:
   i === 0
