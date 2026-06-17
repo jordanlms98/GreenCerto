@@ -20,7 +20,7 @@ interface Testimonial {
 
 export default function Home() {
   const [bookmakerStart, setBookmakerStart] = useState(0)
-  const [bookmakers, setBookmakers] = useState<Bookmaker[]>(
+  const bookmakers: Bookmaker[] = (
     Array(7).fill(null).map((_, i) => ({
       id: i,
       name:
