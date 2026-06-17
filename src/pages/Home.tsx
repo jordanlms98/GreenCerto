@@ -956,27 +956,6 @@ return (
           </div>
         </div>
       </footer>
-
-      {editingId !== null && (
-        <div className="gc-modal">
-          <div className="gc-modal-box">
-            <h3>Editar Link</h3>
-            <p>Ingresa el enlace de afiliado para esta casa de apuestas.</p>
-
-            <input
-              type="url"
-              placeholder="https://ejemplo.com?ref=tucodigo"
-              value={editingLink}
-              onChange={e => setEditingLink(e.target.value)}
-            />
-
-            <div className="gc-modal-actions">
-              <button className="gc-cancel" onClick={() => setEditingId(null)}>Cancelar</button>
-              <button className="gc-button" onClick={saveLink}>Guardar</button>
-            </div>
-          </div>
-        </div>
-      )}
     </div>
   </>
   )
