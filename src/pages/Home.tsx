@@ -33,17 +33,21 @@ export default function Home() {
   `Casa de Apuestas ${i + 1}`,
 
 description:
-  i === 0
-    ? 'BC.GAME combina apuestas deportivas, casino en línea y pagos rápidos en una plataforma moderna y confiable. Una excelente opción para quienes buscan diversión, variedad y practicidad en un solo lugar.'
-    : i === 1
-    ? 'Novibet reúne apuestas deportivas, casino en línea y bonos de hasta $5.000 MXN en una plataforma segura y rápida. Duplica tu primer depósito, recibe apuestas gratis y giros gratis. Todo con pagos instantáneos y soporte 24/7. Diversión, recompensas y confianza en un solo lugar.'
-    : i === 2
-    ? 'Betway combina apuestas deportivas, casino en línea y bonos de hasta $4.000 MXN en una plataforma confiable y ágil. Duplica tu primer depósito, disfruta de giros gratis y promociones semanales. Entretenimiento sin límites con pagos rápidos y atención al cliente 24/7.'
-    : i === 3
-    ? 'Betsson reúne apuestas deportivas, casino online y bonificaciones de hasta $3.000 MXN en una plataforma moderna y segura. Recibe 100% en tu primer depósito más apuestas sin riesgo. Promociones semanales, cashback y torneos con premios en efectivo. Diversión y ganancias en un solo lugar.'
-    : i === 4
-    ? 'Betwinner ofrece apuestas deportivas, casino en vivo y bonos de hasta $2.600 MXN con código promocional en una plataforma rápida y confiable. Duplica tu depósito, obtén giros gratis y acceso a promociones diarias. Pagos instantáneos, múltiples deportes y entretenimiento sin fin.'
-    : 'Agrega aquí el nombre, resumen y enlace de tu casa afiliada.',
+i === 0
+? 'BC.GAME combina apuestas deportivas, casino en línea y pagos rápidos en una plataforma moderna y confiable. Una excelente opción para quienes buscan diversión, variedad y practicidad en un solo lugar.'
+: i === 1
+? 'Novibet reúne apuestas deportivas, casino en línea y bonos de hasta $5.000 MXN en una plataforma segura y rápida. Duplica tu primer depósito, recibe apuestas gratis y giros gratis. Todo con pagos instantáneos y soporte 24/7.'
+: i === 2
+? 'Betway combina apuestas deportivas, casino en línea y bonos de hasta $4.000 MXN en una plataforma confiable y ágil. Duplica tu primer depósito, disfruta de giros gratis y promociones semanales.'
+: i === 3
+? 'Betwinner ofrece apuestas deportivas, casino en vivo y bonos de hasta $2.600 MXN con código promocional en una plataforma rápida y confiable. Duplica tu depósito, obtén giros gratis y acceso a promociones diarias.'
+: i === 4
+? 'Mega Pari ofrece bônus de hasta 230% en deportes o 1.950€ + 150 giros gratis en casino. Código BOLATOP te da hasta $4.400 MXN en tus dos primeros depósitos. Promociones diarias, cashback y recompensas por lealtad.'
+: i === 5
+? 'Brazino777 ofrece bônus de hasta 225% en tu primer depósito, con giros gratis y promociones semanales. Recibe cashback, boosters acumuladores y recompensas continuas. Apuestas deportivas y casino en una plataforma confiable con pagos rápidos.'
+: i === 6
+? 'BigBola te da bônus de bienvenida sin depósito de $400 MXN, más bonificaciones en tus primeros depósitos. Disfruta de apuestas deportivas, casino online y promociones de cumpleaños. Seguridad SEGOB y entretenimiento sin límites.'
+: 'Agrega aquí el nombre, resumen y enlace de tu casa afiliada.'
 
 link:
   i === 0
@@ -53,9 +57,13 @@ link:
     : i === 2
     ? 'https://betway.mx/bwp/casino-welcome-50/es-mx/?s=bfp49683&a=spadid219108'
     : i === 3
-    ? 'https://www.betsson.mx/'
-    : i === 4
     ? 'https://bwredir.com/2XB6?p=%2Fregistration%2F'
+    : i === 4
+    ? 'https://track.afiliapub.com/click?o=49&a=550220643&link_id=528'
+    : i === 5
+    ? 'https://track.afiliapub.com/click?o=86&a=550220643'
+    : i === 6
+    ? 'https://track.afiliapub.com/click?o=89&a=550220643'
     : '#',
 
 isPlaceholder: false,
@@ -762,7 +770,7 @@ useEffect(() => {
 </div>
 
 <div className="gc-orbit-item item-6">
-  <img src="/brazino777.png" alt="Brazino777" />
+  <img src="/brazino7777.png" alt="Brazino777" />
 </div>
 
 <div className="gc-orbit-item item-7">
@@ -773,61 +781,27 @@ useEffect(() => {
 
           <div className="gc-grid">
   {bookmakers
-  .filter(bookie => bookie.id !== 3)
+  {bookmakers.map(bookie => (
   .map(bookie => (
     <div key={bookie.id} className="gc-card">
       <div className="gc-card-logo">
-        {bookie.id === 0 ? (
-  <img
-    src="/bcgame3.png"
-    alt="BC Game"
-    style={{
-      width: '100%',
-      height: '100%',
-      objectFit: 'contain',
-    }}
-  />
+{bookie.id === 0 ? (
+  <img src="/bcgame3.png" alt="BC Game" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
 ) : bookie.id === 1 ? (
-  <img
-    src="/novibet.png"
-    alt="Novibet"
-    style={{
-      width: '100%',
-      height: '100%',
-      objectFit: 'contain',
-    }}
-  />
-      ) : bookie.id === 2 ? (
-    <img
-      src="/betway.png"
-      alt="Betway"
-      style={{
-        width: '100%',
-        height: '100%',
-        objectFit: 'contain',
-        padding: '12px',
-      }}
-    />
-  ) : bookie.id === 3 ? (
-    <img
-      src="/betsson.png"
-      alt="Betsson"
-      style={{
-        width: '100%',
-        height: '100%',
-        objectFit: 'contain',
-        padding: '12px',
-      }}
-    />
-  ) : bookie.id === 4 ? (
-    <img
-      src="/betwinner1.png"
-      alt="BetWinner"
-      style={{
-        width: '300%',
-        height: '150%',
-        objectFit: 'contain',
-      }}
+  <img src="/novibet.png" alt="Novibet" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
+) : bookie.id === 2 ? (
+  <img src="/betway.png" alt="Betway" style={{ width: '100%', height: '100%', objectFit: 'contain', padding: '12px' }} />
+) : bookie.id === 3 ? (
+  <img src="/betwinner1.png" alt="BetWinner" style={{ width: '100%', height: '100%', objectFit: 'contain', padding: '12px' }} />
+) : bookie.id === 4 ? (
+  <img src="/megapari.png" alt="MegaPari" style={{ width: '100%', height: '100%', objectFit: 'contain', padding: '12px' }} />
+) : bookie.id === 5 ? (
+  <img src="/brazino7777.png" alt="Brazino777" style={{ width: '100%', height: '100%', objectFit: 'contain', padding: '12px' }} />
+) : bookie.id === 6 ? (
+  <img src="/bigbola.png" alt="Big Bola" style={{ width: '100%', height: '100%', objectFit: 'contain', padding: '12px' }} />
+) : (
+  bookie.name.substring(0, 2).toUpperCase()
+)}
     />
 ) : (
   bookie.name.substring(0, 2).toUpperCase()
