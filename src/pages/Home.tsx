@@ -632,33 +632,35 @@ useEffect(() => {
 }
 
 .item-2 {
-  top: 12%;
-  right: -50px;
+  top: 8%;
+  right: -48px;
 }
 
 .item-3 {
-  top: 42%;
+  top: 50%;
   right: -58px;
+  transform: translateY(-50%);
 }
 
 .item-4 {
-  bottom: 10%;
-  right: 0;
+  bottom: 8%;
+  right: 20px;
 }
 
 .item-5 {
-  bottom: 10%;
-  left: 0;
+  bottom: 8%;
+  left: 20px;
 }
 
 .item-6 {
-  top: 42%;
+  top: 50%;
   left: -58px;
+  transform: translateY(-50%);
 }
 
 .item-7 {
-  top: 12%;
-  left: -50px;
+  top: 8%;
+  left: -48px;
 }
 
 @keyframes gcOrbitRotate {
