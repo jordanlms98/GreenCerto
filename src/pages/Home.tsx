@@ -185,33 +185,38 @@ useEffect(() => {
 }
 
 .dot-1 {
-  top: 0%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  top: 2%;
+  left: 58%;
 }
 
 .dot-2 {
-  top: 20%;
-  left: 86%;
-  transform: translate(-50%, -50%);
+  top: 15%;
+  right: 8%;
 }
 
 .dot-3 {
-  top: 70%;
-  left: 86%;
-  transform: translate(-50%, -50%);
+  top: 52%;
+  right: 2%;
 }
 
 .dot-4 {
-  top: 70%;
-  left: 14%;
-  transform: translate(-50%, -50%);
+  bottom: 15%;
+  right: 10%;
 }
 
 .dot-5 {
-  top: 20%;
-  left: 14%;
-  transform: translate(-50%, -50%);
+  bottom: 15%;
+  left: 10%;
+}
+
+.dot-6 {
+  top: 52%;
+  left: 2%;
+}
+
+.dot-7 {
+  top: 15%;
+  left: 8%;
 }
 
         .gc-container {
@@ -737,11 +742,13 @@ useEffect(() => {
 
   <div className="gc-orbit-ring">
 
-    <span className="orbit-dot dot-1"></span>
-  <span className="orbit-dot dot-2"></span>
-  <span className="orbit-dot dot-3"></span>
-  <span className="orbit-dot dot-4"></span>
-  <span className="orbit-dot dot-5"></span>
+<span className="orbit-dot dot-1"></span>
+<span className="orbit-dot dot-2"></span>
+<span className="orbit-dot dot-3"></span>
+<span className="orbit-dot dot-4"></span>
+<span className="orbit-dot dot-5"></span>
+<span className="orbit-dot dot-6"></span>
+<span className="orbit-dot dot-7"></span>
     
   <div className="gc-orbit-item item-1">
   <img src="/bcgame3.png" alt="BC Game" />
