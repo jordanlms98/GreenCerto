@@ -801,7 +801,7 @@ return (
   {[...bookmakers, ...bookmakers]
     .slice(bookmakerStart, bookmakerStart + 3)
     .map((bookie, index) => (
-    <<div key={`${bookie.id}-${index}`} className="gc-card">
+    <div key={`${bookie.id}-${index}`} className="gc-card">
       <div className="gc-card-logo">
         {bookie.id === 0 ? (
           <img src="/bcgame3.png" alt="BC Game" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
