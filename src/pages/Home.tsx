@@ -89,10 +89,6 @@ useEffect(() => {
   return () => clearInterval(interval)
 }, [testimonials.length])
   
-  const openEditDialog = (id: number, currentLink: string) => {
-    setEditingId(id)
-    setEditingLink(currentLink)
-  }
 
   const saveLink = () => {
     if (editingId !== null && editingLink) {
