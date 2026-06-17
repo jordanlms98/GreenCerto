@@ -20,20 +20,17 @@ interface Testimonial {
 
 export default function Home() {
   const [bookmakers, setBookmakers] = useState<Bookmaker[]>(
-    Array(5).fill(null).map((_, i) => ({
+    Array(7).fill(null).map((_, i) => ({
       id: i,
       name:
-  i === 0
-    ? 'BC Game'
-    : i === 1
-    ? 'Novibet'
-    : i === 2
-    ? 'Betway'
-    : i === 3
-    ? 'Betsson'
-    : i === 4
-    ? 'BetWinner'
-    : `Casa de Apuestas ${i + 1}`,
+  i === 0 ? 'BC Game' :
+  i === 1 ? 'Novibet' :
+  i === 2 ? 'Betway' :
+  i === 3 ? 'BetWinner' :
+  i === 4 ? 'MegaPari' :
+  i === 5 ? 'Brazino777' :
+  i === 6 ? 'Big Bola' :
+  `Casa de Apuestas ${i + 1}`,
 
 description:
   i === 0
@@ -716,17 +713,17 @@ useEffect(() => {
   <span className="orbit-dot dot-4"></span>
   <span className="orbit-dot dot-5"></span>
     
-    <div className="gc-orbit-item item-1">
-      <img src="/bcgame3.png" alt="BC Game" />
-    </div>
+  <div className="gc-orbit-item item-1">
+  <img src="/bcgame3.png" alt="BC Game" />
+</div>
 
-    <div className="gc-orbit-item item-2">
-      <img src="/novibet.png" alt="Novibet" />
-    </div>
+<div className="gc-orbit-item item-2">
+  <img src="/novibet.png" alt="Novibet" />
+</div>
 
-    <div className="gc-orbit-item item-3">
-      <img src="/betway.png" alt="Betway" />
-    </div>
+<div className="gc-orbit-item item-3">
+  <img src="/betway.png" alt="Betway" />
+</div>
 
 <div className="gc-orbit-item item-4">
   <img
@@ -735,11 +732,18 @@ useEffect(() => {
     className="betwinner-logo"
   />
 </div>
-   {/* 
-    <div className="gc-orbit-item item-5">
-      <img src="/betsson.png" alt="Betsson" />
-    </div>
-    */}
+
+<div className="gc-orbit-item item-5">
+  <img src="/megapari.png" alt="MegaPari" />
+</div>
+
+<div className="gc-orbit-item item-6">
+  <img src="/brazino777.png" alt="Brazino777" />
+</div>
+
+<div className="gc-orbit-item item-7">
+  <img src="/bigbola.png" alt="Big Bola" />
+</div>
   </div>
 </div>
 
