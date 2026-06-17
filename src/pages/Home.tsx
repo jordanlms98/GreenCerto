@@ -134,27 +134,41 @@ useEffect(() => {
     padding: 8px;
   }
 
-  .item-1 {
-    top: -23px;
-  }
+.item-1 {
+  top: -23px;
+  left: 50%;
+  transform: translateX(-50%);
+}
 
-  .item-2 {
-    right: -41px;
-  }
+.item-2 {
+  top: 18px;
+  right: -32px;
+}
 
-  .item-3 {
-    right: 5px;
-    bottom: 5px;
-  }
+.item-3 {
+  top: 105px;
+  right: -42px;
+}
 
-  .item-4 {
-    left: 5px;
-    bottom: 5px;
-  }
+.item-4 {
+  right: 18px;
+  bottom: 5px;
+}
 
-  .item-5 {
-    left: -41px;
-  }
+.item-5 {
+  left: 18px;
+  bottom: 5px;
+}
+
+.item-6 {
+  top: 105px;
+  left: -42px;
+}
+
+.item-7 {
+  top: 18px;
+  left: -32px;
+}
 }
 
 .orbit-dot {
@@ -614,23 +628,33 @@ useEffect(() => {
 }
 
 .item-2 {
-  right: -56px;
-  top: 30%;
+  top: 12%;
+  right: -50px;
 }
 
 .item-3 {
-  right: 18px;
-  bottom: 18px;
+  top: 42%;
+  right: -58px;
 }
 
 .item-4 {
-  left: 18px;
-  bottom: 18px;
+  bottom: 10%;
+  right: 0;
 }
 
 .item-5 {
-  left: -56px;
-  top: 30%;
+  bottom: 10%;
+  left: 0;
+}
+
+.item-6 {
+  top: 42%;
+  left: -58px;
+}
+
+.item-7 {
+  top: 12%;
+  left: -50px;
 }
 
 @keyframes gcOrbitRotate {
