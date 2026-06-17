@@ -19,6 +19,7 @@ interface Testimonial {
 }
 
 export default function Home() {
+  const [bookmakerStart, setBookmakerStart] = useState(0)
   const [bookmakers, setBookmakers] = useState<Bookmaker[]>(
     Array(7).fill(null).map((_, i) => ({
       id: i,
@@ -69,6 +70,16 @@ link:
 isPlaceholder: false,
     }))
   )
+
+  useEffect(() => {
+  const interval = setInterval(() => {
+    setBookmakerStart(prev => (prev + 1) % bookmakers.length)
+  }, 3000)
+
+  return () => clearInterval(interval)
+}, [bookmakers.length])
+  return (
+    <>
 
   const [editingId, setEditingId] = useState<number | null>(null)
   const [editingLink, setEditingLink] = useState('')
@@ -355,6 +366,18 @@ useEffect(() => {
           grid-template-columns: repeat(5, 1fr);
           gap: 18px;
         }
+        .gc-carousel-grid {
+  grid-template-columns: repeat(3, 1fr);
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+@media (max-width: 800px) {
+  .gc-carousel-grid {
+    grid-template-columns: 1fr;
+    max-width: 320px;
+  }
+}
 
         .gc-card {
           background: rgba(30, 41, 59, 0.96);
@@ -784,9 +807,11 @@ useEffect(() => {
   </div>
 </div>
 
-<div className="gc-grid">
-  {bookmakers.map(bookie => (
-    <div key={bookie.id} className="gc-card">
+<div className="gc-grid gc-carousel-grid">
+  {[...bookmakers, ...bookmakers]
+    .slice(bookmakerStart, bookmakerStart + 3)
+    .map((bookie, index) => (
+    <<div key={`${bookie.id}-${index}`} className="gc-card">
       <div className="gc-card-logo">
         {bookie.id === 0 ? (
           <img src="/bcgame3.png" alt="BC Game" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
