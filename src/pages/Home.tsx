@@ -139,40 +139,41 @@ useEffect(() => {
   }
 
 .item-1 {
-  top: -23px;
+  top: -30px;
   left: 50%;
   transform: translateX(-50%);
 }
 
 .item-2 {
-  top: 18px;
-  right: -32px;
+  top: 10%;
+  right: -45px;
 }
 
 .item-3 {
-  top: 105px;
-  right: -42px;
+  top: 50%;
+  right: -60px;
+  transform: translateY(-50%);
 }
 
 .item-4 {
-  right: 18px;
-  bottom: 5px;
+  bottom: 10%;
+  right: 10%;
 }
 
 .item-5 {
-  left: 18px;
-  bottom: 5px;
+  bottom: 10%;
+  left: 10%;
 }
 
 .item-6 {
-  top: 105px;
-  left: -42px;
+  top: 50%;
+  left: -60px;
+  transform: translateY(-50%);
 }
 
 .item-7 {
-  top: 18px;
-  left: -32px;
-}
+  top: 10%;
+  left: -45px;
 }
 
 .orbit-dot {
