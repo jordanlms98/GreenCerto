@@ -99,6 +99,9 @@ useEffect(() => {
 }, [testimonials.length])
 
   return (
+  <>
+    
+  return (
     <div className="gc-page">
       <style>{`
         .gc-page {
