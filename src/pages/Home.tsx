@@ -381,6 +381,85 @@ position: relative;
   );
 }
 
+.gc-list-section {
+  margin-top: 50px;
+}
+
+.gc-list-section h3 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #fff;
+  font-size: 28px;
+}
+
+.gc-list-item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 16px;
+  padding: 18px;
+  margin-bottom: 15px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.gc-list-item:hover {
+  transform: translateY(-2px);
+  border-color: #00d65a;
+}
+
+.gc-list-logo {
+  width: 140px;
+  min-width: 140px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.gc-list-logo img {
+  max-width: 120px;
+  max-height: 60px;
+  object-fit: contain;
+}
+
+.gc-list-content {
+  flex: 1;
+}
+
+.gc-list-content h4 {
+  color: white;
+  margin-bottom: 8px;
+}
+
+.gc-list-content p {
+  color: #b8c2d6;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.gc-list-button {
+  background: #00d65a;
+  color: #000;
+  font-weight: 700;
+  padding: 12px 24px;
+  border-radius: 10px;
+  white-space: nowrap;
+}
+
+@media (max-width: 768px) {
+  .gc-list-item {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .gc-list-logo {
+    width: 100%;
+  }
+}
+
 .gc-carousel-grid .gc-card {
   flex: 0 0 280px;
 }
@@ -872,6 +951,46 @@ position: relative;
           <div className="gc-tip">
             💡 Explora las mejores casas de apuestas disponibles para México y encuentra la plataforma ideal para tus preferencias.
           </div>
+          <div className="gc-list-section">
+  <h3>Casas de Apuestas Recomendadas</h3>
+
+  {bookmakers.map((bookie) => (
+    <a
+      key={bookie.id}
+      href={bookie.link}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="gc-list-item"
+    >
+      <div className="gc-list-logo">
+        {bookie.id === 0 ? (
+          <img src="/bcgame3.png" alt="BC Game" />
+        ) : bookie.id === 1 ? (
+          <img src="/novibet.png" alt="Novibet" />
+        ) : bookie.id === 2 ? (
+          <img src="/betway.png" alt="Betway" />
+        ) : bookie.id === 3 ? (
+          <img src="/betwinner1.png" alt="BetWinner" />
+        ) : bookie.id === 4 ? (
+          <img src="/megapari.png" alt="MegaPari" />
+        ) : bookie.id === 5 ? (
+          <img src="/brazino7777.png" alt="Brazino777" />
+        ) : (
+          <img src="/bigbola.png" alt="Big Bola" />
+        )}
+      </div>
+
+      <div className="gc-list-content">
+        <h4>{bookie.name}</h4>
+        <p>{bookie.description}</p>
+      </div>
+
+      <div className="gc-list-button">
+        Visitar
+      </div>
+    </a>
+  ))}
+</div>
         </div>
       </section>
 
