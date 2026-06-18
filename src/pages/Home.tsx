@@ -463,47 +463,20 @@ position: relative;
 }
 
 @media (max-width: 800px) {
-  .gc-carousel-grid {
-    flex-direction: column;
-    align-items: center;
-  }
-
   .gc-orbit-wrap {
-    width: 340px;
-    height: 340px;
-    margin: 30px auto 45px;
+    width: 300px;
+    height: 300px;
+    margin: 50px auto;
   }
 
   .gc-orbit-ring {
-    width: 340px;
-    height: 340px;
-    inset: 0;
+    width: 300px;
+    height: 300px;
   }
 
   .gc-orbit-center {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%) !important;
-
-  width: 135px;
-  height: 135px;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  z-index: 10;
-}
-
-  .gc-orbit-center img {
-    width: 105px;
-  }
-
-  .gc-orbit-item {
-    width: 82px;
-    height: 52px;
-    padding: 7px;
+    width: 120px;
+    height: 120px;
   }
 }
 
