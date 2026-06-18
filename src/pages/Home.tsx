@@ -360,7 +360,7 @@ return (
   display: flex;
   justify-content: center;
   gap: 20px;
-  max-width: 950px;
+  max-width: 760px;
   margin: 0 auto;
   overflow: hidden;
 }
@@ -811,7 +811,7 @@ return (
 
 <div className="gc-grid gc-carousel-grid">
   {[...bookmakers, ...bookmakers]
-    .slice(bookmakerStart, bookmakerStart + 3)
+    .slice(bookmakerStart, bookmakerStart + 5)
     .map((bookie, index) => (
     <div key={`${bookie.id}-${index}`} className="gc-card">
       <div className="gc-card-logo">
