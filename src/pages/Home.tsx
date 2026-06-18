@@ -469,36 +469,33 @@ position: relative;
   }
 
   .gc-orbit-wrap {
-  height: 320px;
-}
+    width: 340px;
+    height: 340px;
+    margin: 30px auto 45px;
+  }
 
-.gc-orbit-ring {
-  width: 260px;
-  height: 260px;
-}
+  .gc-orbit-ring {
+    width: 340px;
+    height: 340px;
+    inset: 0;
+  }
 
-.gc-orbit-center {
-  width: 120px;
-  height: 120px;
-}
+  .gc-orbit-center {
+    width: 135px;
+    height: 135px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
 
-.gc-orbit-center img {
-  width: 80%;
-}
+  .gc-orbit-center img {
+    width: 105px;
+  }
 
-.gc-orbit-item {
-  width: 70px;
-  height: 70px;
-}
-
-.gc-orbit-item img {
-  max-width: 55px;
-  max-height: 40px;
-}
-
-  .gc-carousel-grid .gc-card {
-    width: 100%;
-    max-width: 320px;
+  .gc-orbit-item {
+    width: 82px;
+    height: 52px;
+    padding: 7px;
   }
 }
 
