@@ -98,9 +98,6 @@ useEffect(() => {
   return () => clearInterval(interval)
 }, [testimonials.length])
 
-return (
-  <>
-
   return (
     <div className="gc-page">
       <style>{`
