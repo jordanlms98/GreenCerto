@@ -356,37 +356,27 @@ return (
           grid-template-columns: repeat(5, 1fr);
           gap: 18px;
         }
-        .gc-carousel-grid {
-  grid-template-columns: repeat(3, 1fr);
-  max-width: 900px;
+     .gc-carousel-grid {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  max-width: 950px;
   margin: 0 auto;
-  position: relative;
+  overflow: hidden;
 }
 
-.gc-carousel-grid::before,
-.gc-carousel-grid::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  width: 70px;
-  height: 100%;
-  z-index: 5;
-  pointer-events: none;
-}
-
-.gc-carousel-grid::before {
-  left: -35px;
-  background: linear-gradient(90deg, #0f172a, transparent);
-}
-
-.gc-carousel-grid::after {
-  right: -35px;
-  background: linear-gradient(270deg, #0f172a, transparent);
+.gc-carousel-grid .gc-card {
+  flex: 0 0 280px;
 }
 
 @media (max-width: 800px) {
   .gc-carousel-grid {
-    grid-template-columns: 1fr;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .gc-carousel-grid .gc-card {
+    width: 100%;
     max-width: 320px;
   }
 }
@@ -821,7 +811,7 @@ return (
 
 <div className="gc-grid gc-carousel-grid">
   {[...bookmakers, ...bookmakers]
-    .slice(bookmakerStart, bookmakerStart + 5)
+    .slice(bookmakerStart, bookmakerStart + 3)
     .map((bookie, index) => (
     <div key={`${bookie.id}-${index}`} className="gc-card">
       <div className="gc-card-logo">
