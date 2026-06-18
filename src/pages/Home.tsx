@@ -974,7 +974,15 @@ position: relative;
           <div className="gc-list-section">
   <h3>Casas de Apuestas Recomendadas</h3>
 
-  {bookmakers.map((bookie) => (
+  {[
+  bookmakers[3], // BetWinner
+  bookmakers[4], // MegaPari
+  bookmakers[1], // Novibet
+  bookmakers[2], // Betway
+  bookmakers[5], // Brazino777
+  bookmakers[6], // Big Bola
+  bookmakers[0], // BC Game
+].map((bookie) => (
     <a
       key={bookie.id}
       href={bookie.link}
