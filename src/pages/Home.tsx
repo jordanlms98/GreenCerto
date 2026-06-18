@@ -360,7 +360,7 @@ return (
   display: flex;
   justify-content: center;
   gap: 20px;
-  max-width: 760px;
+  max-width: 1160px;
   margin: 0 auto;
   overflow: hidden;
 }
