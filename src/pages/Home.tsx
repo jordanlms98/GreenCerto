@@ -730,6 +730,10 @@ position: relative;
   animation: gcOrbitRotate 22s linear infinite;
 }
 
+.gc-orbit-item img {
+  animation: gcOrbitReverse 22s linear infinite;
+}
+
 .gc-orbit-item {
   position: absolute;
   width: 112px;
@@ -795,6 +799,16 @@ position: relative;
 
   to {
     transform: rotate(360deg);
+  }
+}
+
+@keyframes gcOrbitReverse {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(-360deg);
   }
 }
 
