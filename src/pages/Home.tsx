@@ -466,11 +466,20 @@ position: relative;
   .gc-carousel-grid {
     flex-direction: column;
     align-items: center;
+    margin-top: 20px;
   }
 
   .gc-carousel-grid .gc-card {
     width: 100%;
     max-width: 320px;
+  }
+
+  .gc-orbit-wrap {
+    display: none;
+  }
+  
+  .gc-carousel-grid {
+    margin-top: 20px;
   }
 }
 
