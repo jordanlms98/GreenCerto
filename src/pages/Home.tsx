@@ -360,6 +360,28 @@ return (
   grid-template-columns: repeat(3, 1fr);
   max-width: 900px;
   margin: 0 auto;
+  position: relative;
+}
+
+.gc-carousel-grid::before,
+.gc-carousel-grid::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  width: 70px;
+  height: 100%;
+  z-index: 5;
+  pointer-events: none;
+}
+
+.gc-carousel-grid::before {
+  left: -35px;
+  background: linear-gradient(90deg, #0f172a, transparent);
+}
+
+.gc-carousel-grid::after {
+  right: -35px;
+  background: linear-gradient(270deg, #0f172a, transparent);
 }
 
 @media (max-width: 800px) {
@@ -799,7 +821,7 @@ return (
 
 <div className="gc-grid gc-carousel-grid">
   {[...bookmakers, ...bookmakers]
-    .slice(bookmakerStart, bookmakerStart + 3)
+    .slice(bookmakerStart, bookmakerStart + 5)
     .map((bookie, index) => (
     <div key={`${bookie.id}-${index}`} className="gc-card">
       <div className="gc-card-logo">
