@@ -363,6 +363,22 @@ return (
   max-width: 1160px;
   margin: 0 auto;
   overflow: hidden;
+position: relative;
+
+  -webkit-mask-image: linear-gradient(
+    to right,
+    transparent 0%,
+    black 10%,
+    black 90%,
+    transparent 100%
+  );
+  mask-image: linear-gradient(
+    to right,
+    transparent 0%,
+    black 10%,
+    black 90%,
+    transparent 100%
+  );
 }
 
 .gc-carousel-grid .gc-card {
