@@ -942,10 +942,9 @@ position: relative;
       </div>
 
       <div className="gc-card-body">
-        <h3>{bookie.name}</h3>
-        <p>{bookie.description}</p>
+  <h3>{bookie.name}</h3>
 
-        <div className="gc-card-actions">
+  <div className="gc-card-actions">
           <a
             className="gc-visit"
             href={bookie.link}
