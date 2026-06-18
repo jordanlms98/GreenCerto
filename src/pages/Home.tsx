@@ -481,12 +481,20 @@ position: relative;
   }
 
   .gc-orbit-center {
-    width: 135px;
-    height: 135px;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-  }
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) !important;
+
+  width: 135px;
+  height: 135px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  z-index: 10;
+}
 
   .gc-orbit-center img {
     width: 105px;
