@@ -463,20 +463,14 @@ position: relative;
 }
 
 @media (max-width: 800px) {
-  .gc-orbit-wrap {
-    width: 300px;
-    height: 300px;
-    margin: 50px auto;
+  .gc-carousel-grid {
+    flex-direction: column;
+    align-items: center;
   }
 
-  .gc-orbit-ring {
-    width: 300px;
-    height: 300px;
-  }
-
-  .gc-orbit-center {
-    width: 120px;
-    height: 120px;
+  .gc-carousel-grid .gc-card {
+    width: 100%;
+    max-width: 320px;
   }
 }
 
