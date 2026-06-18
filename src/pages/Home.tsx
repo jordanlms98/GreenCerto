@@ -468,6 +468,34 @@ position: relative;
     align-items: center;
   }
 
+  .gc-orbit-wrap {
+  height: 320px;
+}
+
+.gc-orbit-ring {
+  width: 260px;
+  height: 260px;
+}
+
+.gc-orbit-center {
+  width: 120px;
+  height: 120px;
+}
+
+.gc-orbit-center img {
+  width: 80%;
+}
+
+.gc-orbit-item {
+  width: 70px;
+  height: 70px;
+}
+
+.gc-orbit-item img {
+  max-width: 55px;
+  max-height: 40px;
+}
+
   .gc-carousel-grid .gc-card {
     width: 100%;
     max-width: 320px;
