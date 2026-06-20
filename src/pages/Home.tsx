@@ -894,7 +894,10 @@ position: relative;
       Nuestro objetivo es ayudarte a encontrar plataformas confiables y populares, facilitando el acceso a información clara y organizada en un solo lugar.
     </p>
 
-    {/* COLE AQUI SEU BLOCO gc-orbit-wrap COMPLETO */}
+    <div className="gc-orbit-wrap"> 
+    <div className="gc-orbit-center"> 
+    <img src="/logo1.png" alt="Green Certo" /> 
+    </div>
 
     <div className="gc-list-section">
       <h3>Casas de Apuestas Recomendadas</h3>
