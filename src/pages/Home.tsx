@@ -486,6 +486,18 @@ position: relative;
     margin-top: 20px;
   }
 
+  @media (max-width: 800px) {
+  .gc-list-section h3 {
+    display: none;
+  }
+}
+
+@media (max-width: 800px) {
+  .gc-tip {
+    display: none;
+  }
+}
+
   .gc-carousel-grid .gc-card {
     width: 100%;
     max-width: 320px;
