@@ -122,6 +122,23 @@ useEffect(() => {
     margin: 30px auto 45px;
   }
 
+  .gc-orbit-wrap {
+  order: 1;
+}
+
+.gc-list-section {
+  order: 2;
+}
+
+.gc-carousel-grid {
+  order: 3;
+}
+
+#casas .gc-container {
+  display: flex;
+  flex-direction: column;
+}
+
   .gc-orbit-center {
     width: 115px;
     height: 115px;
@@ -925,6 +942,43 @@ position: relative;
   </div>
 </div>
 
+                    <div className="gc-list-section">
+  <h3>Casas de Apuestas Recomendadas</h3>
+
+  {[
+  bookmakers[3], // BetWinner
+  bookmakers[4], // MegaPari
+  bookmakers[1], // Novibet
+  bookmakers[2], // Betway
+  bookmakers[5], // Brazino777
+  bookmakers[6], // Big Bola
+  bookmakers[0], // BC Game
+].map((bookie) => (
+    <a
+      key={bookie.id}
+      href={bookie.link}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="gc-list-item"
+    >
+      <div className="gc-list-logo">
+        {bookie.id === 0 ? (
+          <img src="/bcgame3.png" alt="BC Game" />
+        ) : bookie.id === 1 ? (
+          <img src="/novibet.png" alt="Novibet" />
+        ) : bookie.id === 2 ? (
+          <img src="/betway.png" alt="Betway" />
+        ) : bookie.id === 3 ? (
+          <img src="/betwinner1.png" alt="BetWinner" />
+        ) : bookie.id === 4 ? (
+          <img src="/megapari.png" alt="MegaPari" />
+        ) : bookie.id === 5 ? (
+          <img src="/brazino7777.png" alt="Brazino777" />
+        ) : (
+          <img src="/bigbola.png" alt="Big Bola" />
+        )}
+      </div>
+
 <div className="gc-grid gc-carousel-grid">
   {[...bookmakers, ...bookmakers]
     .slice(bookmakerStart, bookmakerStart + 5)
@@ -971,42 +1025,6 @@ position: relative;
           <div className="gc-tip">
             💡 Explora las mejores casas de apuestas disponibles para México y encuentra la plataforma ideal para tus preferencias.
           </div>
-          <div className="gc-list-section">
-  <h3>Casas de Apuestas Recomendadas</h3>
-
-  {[
-  bookmakers[3], // BetWinner
-  bookmakers[4], // MegaPari
-  bookmakers[1], // Novibet
-  bookmakers[2], // Betway
-  bookmakers[5], // Brazino777
-  bookmakers[6], // Big Bola
-  bookmakers[0], // BC Game
-].map((bookie) => (
-    <a
-      key={bookie.id}
-      href={bookie.link}
-      target="_blank"
-      rel="noopener noreferrer"
-      className="gc-list-item"
-    >
-      <div className="gc-list-logo">
-        {bookie.id === 0 ? (
-          <img src="/bcgame3.png" alt="BC Game" />
-        ) : bookie.id === 1 ? (
-          <img src="/novibet.png" alt="Novibet" />
-        ) : bookie.id === 2 ? (
-          <img src="/betway.png" alt="Betway" />
-        ) : bookie.id === 3 ? (
-          <img src="/betwinner1.png" alt="BetWinner" />
-        ) : bookie.id === 4 ? (
-          <img src="/megapari.png" alt="MegaPari" />
-        ) : bookie.id === 5 ? (
-          <img src="/brazino7777.png" alt="Brazino777" />
-        ) : (
-          <img src="/bigbola.png" alt="Big Bola" />
-        )}
-      </div>
 
       <div className="gc-list-content">
         <h4>{bookie.name}</h4>
