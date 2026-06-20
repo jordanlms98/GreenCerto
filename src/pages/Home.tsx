@@ -946,14 +946,14 @@ position: relative;
   <h3>Casas de Apuestas Recomendadas</h3>
 
   {[
-  bookmakers[3], // BetWinner
-  bookmakers[4], // MegaPari
-  bookmakers[1], // Novibet
-  bookmakers[2], // Betway
-  bookmakers[5], // Brazino777
-  bookmakers[6], // Big Bola
-  bookmakers[0], // BC Game
-].map((bookie) => (
+    bookmakers[3],
+    bookmakers[4],
+    bookmakers[1],
+    bookmakers[2],
+    bookmakers[5],
+    bookmakers[6],
+    bookmakers[0],
+  ].map((bookie) => (
     <a
       key={bookie.id}
       href={bookie.link}
@@ -962,64 +962,54 @@ position: relative;
       className="gc-list-item"
     >
       <div className="gc-list-logo">
-        {bookie.id === 0 ? (
-          <img src="/bcgame3.png" alt="BC Game" />
-        ) : bookie.id === 1 ? (
-          <img src="/novibet.png" alt="Novibet" />
-        ) : bookie.id === 2 ? (
-          <img src="/betway.png" alt="Betway" />
-        ) : bookie.id === 3 ? (
-          <img src="/betwinner1.png" alt="BetWinner" />
-        ) : bookie.id === 4 ? (
-          <img src="/megapari.png" alt="MegaPari" />
-        ) : bookie.id === 5 ? (
-          <img src="/brazino7777.png" alt="Brazino777" />
-        ) : (
-          <img src="/bigbola.png" alt="Big Bola" />
-        )}
+        {bookie.id === 0 ? <img src="/bcgame3.png" alt="BC Game" /> :
+         bookie.id === 1 ? <img src="/novibet.png" alt="Novibet" /> :
+         bookie.id === 2 ? <img src="/betway.png" alt="Betway" /> :
+         bookie.id === 3 ? <img src="/betwinner1.png" alt="BetWinner" /> :
+         bookie.id === 4 ? <img src="/megapari.png" alt="MegaPari" /> :
+         bookie.id === 5 ? <img src="/brazino7777.png" alt="Brazino777" /> :
+         <img src="/bigbola.png" alt="Big Bola" />}
       </div>
+
+      <div className="gc-list-content">
+        <h4>{bookie.name}</h4>
+        <p>{bookie.description}</p>
+      </div>
+
+      <div className="gc-list-button">Visitar</div>
+    </a>
+  ))}
+</div>
+
+<div className="gc-tip">
+  💡 Explora las mejores casas de apuestas disponibles para México y encuentra la plataforma ideal para tus preferencias.
+</div>
 
 <div className="gc-grid gc-carousel-grid">
   {[...bookmakers, ...bookmakers]
     .slice(bookmakerStart, bookmakerStart + 5)
     .map((bookie, index) => (
-    <div key={`${bookie.id}-${index}`} className="gc-card">
-      <div className="gc-card-logo">
-        {bookie.id === 0 ? (
-          <img src="/bcgame3.png" alt="BC Game" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
-        ) : bookie.id === 1 ? (
-          <img src="/novibet.png" alt="Novibet" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
-        ) : bookie.id === 2 ? (
-          <img src="/betway.png" alt="Betway" style={{ width: '100%', height: '100%', objectFit: 'contain', padding: '12px' }} />
-        ) : bookie.id === 3 ? (
-          <img src="/betwinner1.png" alt="BetWinner" style={{ width: '100%', height: '100%', objectFit: 'contain', padding: '12px' }} />
-        ) : bookie.id === 4 ? (
-          <img src="/megapari.png" alt="MegaPari" style={{ width: '100%', height: '100%', objectFit: 'contain', padding: '12px' }} />
-        ) : bookie.id === 5 ? (
-          <img src="/brazino7777.png" alt="Brazino777" style={{ width: '100%', height: '100%', objectFit: 'contain', padding: '12px' }} />
-        ) : bookie.id === 6 ? (
-          <img src="/bigbola.png" alt="Big Bola" style={{ width: '100%', height: '100%', objectFit: 'contain', padding: '12px' }} />
-        ) : (
-          bookie.name.substring(0, 2).toUpperCase()
-        )}
-      </div>
+      <div key={`${bookie.id}-${index}`} className="gc-card">
+        <div className="gc-card-logo">
+          {bookie.id === 0 ? <img src="/bcgame3.png" alt="BC Game" style={{ width: '100%', height: '100%', objectFit: 'contain' }} /> :
+           bookie.id === 1 ? <img src="/novibet.png" alt="Novibet" style={{ width: '100%', height: '100%', objectFit: 'contain' }} /> :
+           bookie.id === 2 ? <img src="/betway.png" alt="Betway" style={{ width: '100%', height: '100%', objectFit: 'contain', padding: '12px' }} /> :
+           bookie.id === 3 ? <img src="/betwinner1.png" alt="BetWinner" style={{ width: '100%', height: '100%', objectFit: 'contain', padding: '12px' }} /> :
+           bookie.id === 4 ? <img src="/megapari.png" alt="MegaPari" style={{ width: '100%', height: '100%', objectFit: 'contain', padding: '12px' }} /> :
+           bookie.id === 5 ? <img src="/brazino7777.png" alt="Brazino777" style={{ width: '100%', height: '100%', objectFit: 'contain', padding: '12px' }} /> :
+           <img src="/bigbola.png" alt="Big Bola" style={{ width: '100%', height: '100%', objectFit: 'contain', padding: '12px' }} />}
+        </div>
 
-      <div className="gc-card-body">
-  <h3>{bookie.name}</h3>
-
-  <div className="gc-card-actions">
-          <a
-            className="gc-visit"
-            href={bookie.link}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Visitar
-          </a>
+        <div className="gc-card-body">
+          <h3>{bookie.name}</h3>
+          <div className="gc-card-actions">
+            <a className="gc-visit" href={bookie.link} target="_blank" rel="noopener noreferrer">
+              Visitar
+            </a>
+          </div>
         </div>
       </div>
-    </div>
-  ))}
+    ))}
 </div>
 
           <div className="gc-tip">
