@@ -894,10 +894,53 @@ position: relative;
       Nuestro objetivo es ayudarte a encontrar plataformas confiables y populares, facilitando el acceso a información clara y organizada en un solo lugar.
     </p>
 
-    <div className="gc-orbit-wrap"> 
-    <div className="gc-orbit-center"> 
-    <img src="/logo1.png" alt="Green Certo" /> 
+    <div className="gc-orbit-wrap">
+  <div className="gc-orbit-center">
+    <img src="/logo1.png" alt="Green Certo" />
+  </div>
+
+  <div className="gc-orbit-ring">
+    <span className="orbit-dot dot-1"></span>
+    <span className="orbit-dot dot-2"></span>
+    <span className="orbit-dot dot-3"></span>
+    <span className="orbit-dot dot-4"></span>
+    <span className="orbit-dot dot-5"></span>
+    <span className="orbit-dot dot-6"></span>
+    <span className="orbit-dot dot-7"></span>
+
+    <div className="gc-orbit-item item-1">
+      <img src="/bcgame3.png" alt="BC Game" />
     </div>
+
+    <div className="gc-orbit-item item-2">
+      <img src="/novibet.png" alt="Novibet" />
+    </div>
+
+    <div className="gc-orbit-item item-3">
+      <img src="/betway.png" alt="Betway" />
+    </div>
+
+    <div className="gc-orbit-item item-4">
+      <img
+        src="/betwinner1.png"
+        alt="BetWinner"
+        className="betwinner-logo"
+      />
+    </div>
+
+    <div className="gc-orbit-item item-5">
+      <img src="/megapari.png" alt="MegaPari" />
+    </div>
+
+    <div className="gc-orbit-item item-6">
+      <img src="/brazino7777.png" alt="Brazino777" />
+    </div>
+
+    <div className="gc-orbit-item item-7">
+      <img src="/bigbola.png" alt="Big Bola" />
+    </div>
+  </div>
+</div>
 
     <div className="gc-list-section">
       <h3>Casas de Apuestas Recomendadas</h3>
