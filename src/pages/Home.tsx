@@ -21,17 +21,20 @@ interface Testimonial {
 export default function Home() {
   const [bookmakerStart, setBookmakerStart] = useState(0)
   const bookmakers: Bookmaker[] = (
-    Array(7).fill(null).map((_, i) => ({
+    Array(10).fill(null).map((_, i) => ({
       id: i,
-      name:
-  i === 0 ? 'BC Game' :
-  i === 1 ? 'Novibet' :
-  i === 2 ? 'Betway' :
-  i === 3 ? 'BetWinner' :
-  i === 4 ? 'MegaPari' :
-  i === 5 ? 'Brazino777' :
-  i === 6 ? 'Big Bola' :
-  `Casa de Apuestas ${i + 1}`,
+name:
+i === 0 ? 'BC Game' :
+i === 1 ? 'Novibet' :
+i === 2 ? 'Betway' :
+i === 3 ? 'BetWinner' :
+i === 4 ? 'MegaPari' :
+i === 5 ? 'Brazino777' :
+i === 6 ? 'Big Bola' :
+i === 7 ? '10Bet' :
+i === 8 ? 'Linebet' :
+i === 9 ? 'Pin-Up' :
+`Casa de Apuestas ${i + 1}`,
 
 description:
 i === 0
@@ -48,6 +51,12 @@ i === 0
 ? 'Brazino777 ofrece bônus de hasta 225% en tu primer depósito, con giros gratis y promociones semanales. Recibe cashback, boosters acumuladores y recompensas continuas. Apuestas deportivas y casino en una plataforma confiable con pagos rápidos.'
 : i === 6
 ? 'BigBola te da bônus de bienvenida sin depósito de $400 MXN, más bonificaciones en tus primeros depósitos. Disfruta de apuestas deportivas, casino online y promociones de cumpleaños. Seguridad SEGOB y entretenimiento sin límites.'
+: i === 7
+? '10Bet ofrece apuestas deportivas, casino online y promociones exclusivas para nuevos jugadores. Plataforma internacional con pagos rápidos y amplia variedad de mercados deportivos.'
+: i === 8
+? 'Linebet combina apuestas deportivas, casino y eSports en una plataforma moderna y confiable. Bonos atractivos, cuotas competitivas y soporte disponible las 24 horas.'
+: i === 9
+? 'Pin-Up ofrece casino online, apuestas deportivas y promociones especiales para nuevos usuarios. Diseño moderno, retiros rápidos y una amplia selección de juegos.'
 : 'Agrega aquí el nombre, resumen y enlace de tu casa afiliada.',
 
 link:
@@ -65,6 +74,12 @@ link:
     ? 'https://track.afiliapub.com/click?o=86&a=550220643'
     : i === 6
     ? 'https://track.afiliapub.com/click?o=89&a=550220643'
+   : i === 7
+   ? 'SEU_LINK_10BET'
+   : i === 8
+   ? 'SEU_LINK_LINEBET'
+   : i === 9
+   ? 'SEU_LINK_PINUP'
     : '#',
 
 isPlaceholder: false,
@@ -960,14 +975,28 @@ position: relative;
       {[bookmakers[3], bookmakers[4], bookmakers[1], bookmakers[2], bookmakers[5], bookmakers[6], bookmakers[0]].map((bookie) => (
         <a key={bookie.id} href={bookie.link} target="_blank" rel="noopener noreferrer" className="gc-list-item">
           <div className="gc-list-logo">
-            {bookie.id === 0 ? <img src="/bcgame3.png" alt="BC Game" /> :
-             bookie.id === 1 ? <img src="/novibet.png" alt="Novibet" /> :
-             bookie.id === 2 ? <img src="/betway.png" alt="Betway" /> :
-             bookie.id === 3 ? <img src="/betwinner1.png" alt="BetWinner" /> :
-             bookie.id === 4 ? <img src="/megapari.png" alt="MegaPari" /> :
-             bookie.id === 5 ? <img src="/brazino7777.png" alt="Brazino777" /> :
-             <img src="/bigbola.png" alt="Big Bola" />}
-          </div>
+  {bookie.id === 0 ? (
+    <img src="/bcgame3.png" alt="BC Game" />
+  ) : bookie.id === 1 ? (
+    <img src="/novibet.png" alt="Novibet" />
+  ) : bookie.id === 2 ? (
+    <img src="/betway.png" alt="Betway" />
+  ) : bookie.id === 3 ? (
+    <img src="/betwinner1.png" alt="BetWinner" />
+  ) : bookie.id === 4 ? (
+    <img src="/megapari.png" alt="MegaPari" />
+  ) : bookie.id === 5 ? (
+    <img src="/brazino7777.png" alt="Brazino777" />
+  ) : bookie.id === 6 ? (
+    <img src="/bigbola.png" alt="Big Bola" />
+  ) : bookie.id === 7 ? (
+    <img src="/10bet.png" alt="10Bet" />
+  ) : bookie.id === 8 ? (
+    <img src="/linebet.png" alt="Linebet" />
+  ) : (
+    <img src="/pinup.png" alt="Pin-Up" />
+  )}
+</div>
 
           <div className="gc-list-content">
             <h4>{bookie.name}</h4>
