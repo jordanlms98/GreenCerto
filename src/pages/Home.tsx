@@ -956,16 +956,7 @@ position: relative;
   </div>
 
   <div className="gc-orbit-ring">
-    <span className="orbit-dot dot-1"></span>
-    <span className="orbit-dot dot-2"></span>
-    <span className="orbit-dot dot-3"></span>
-    <span className="orbit-dot dot-4"></span>
-    <span className="orbit-dot dot-5"></span>
-    <span className="orbit-dot dot-6"></span>
-    <span className="orbit-dot dot-7"></span>
-    <span className="orbit-dot dot-8"></span>
-    <span className="orbit-dot dot-9"></span>
-    <span className="orbit-dot dot-10"></span>
+
 
     <div className="gc-orbit-item item-1">
       <img src="/bcgame3.png" alt="BC Game" />
