@@ -997,16 +997,16 @@ position: relative;
   ) : bookie.id === 4 ? (
     <img src="/megapari.png" alt="MegaPari" />
   ) : bookie.id === 5 ? (
-    <img src="/brazino7777.png" alt="Brazino777" />
-  ) : bookie.id === 6 ? (
-    <img src="/bigbola.png" alt="Big Bola" />
-  ) : bookie.id === 7 ? (
-    <img src="/10bet.png" alt="10Bet" />
-  ) : bookie.id === 8 ? (
-    <img src="/linebet.png" alt="Linebet" />
-  ) : (
-    <img src="/pinup.png" alt="Pin-Up" />
-  )}
+  <img src="/brazino7777.png" alt="Brazino777" style={{ width: '100%', height: '100%', objectFit: 'contain', padding: '12px' }} />
+) : bookie.id === 6 ? (
+  <img src="/bigbola.png" alt="Big Bola" style={{ width: '100%', height: '100%', objectFit: 'contain', padding: '12px' }} />
+) : bookie.id === 7 ? (
+  <img src="/10bet.png" alt="10Bet" style={{ width: '100%', height: '100%', objectFit: 'contain', padding: '12px' }} />
+) : bookie.id === 8 ? (
+  <img src="/linebet.png" alt="Linebet" style={{ width: '100%', height: '100%', objectFit: 'contain', padding: '12px' }} />
+) : (
+  <img src="/pinup.png" alt="Pin-Up" style={{ width: '100%', height: '100%', objectFit: 'contain', padding: '12px' }} />
+)}
 </div>
 
           <div className="gc-list-content">
