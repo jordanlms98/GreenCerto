@@ -75,9 +75,9 @@ link:
     : i === 6
     ? 'https://track.afiliapub.com/click?o=89&a=550220643'
    : i === 7
-   ? 'SEU_LINK_10BET'
+   ? 'https://go.taps.buzz/click?pid=31250&offer_id=5080'
    : i === 8
-   ? 'SEU_LINK_LINEBET'
+   ? 'https://wow.greatjob.click/click?pid=31250&offer_id=4967&l=1782391212'
    : i === 9
    ? 'SEU_LINK_PINUP'
     : '#',
