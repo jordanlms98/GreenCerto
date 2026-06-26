@@ -204,6 +204,21 @@ useEffect(() => {
   top: 18px;
   left: -32px;
 }
+.item-8 {
+  top: 18%;
+  right: -15px;
+}
+
+.item-9 {
+  bottom: 18%;
+  right: -15px;
+}
+
+.item-10 {
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
 }
 
 .orbit-dot {
@@ -842,6 +857,21 @@ position: relative;
   top: 8%;
   left: -48px;
 }
+.item-8 {
+  top: 18%;
+  right: -15px;
+}
+
+.item-9 {
+  bottom: 18%;
+  right: -15px;
+}
+
+.item-10 {
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
 
 @keyframes gcOrbitRotate {
   from {
@@ -934,6 +964,9 @@ position: relative;
     <span className="orbit-dot dot-5"></span>
     <span className="orbit-dot dot-6"></span>
     <span className="orbit-dot dot-7"></span>
+    <span className="orbit-dot dot-8"></span>
+    <span className="orbit-dot dot-9"></span>
+    <span className="orbit-dot dot-10"></span>
 
     <div className="gc-orbit-item item-1">
       <img src="/bcgame3.png" alt="BC Game" />
@@ -966,6 +999,17 @@ position: relative;
     <div className="gc-orbit-item item-7">
       <img src="/bigbola.png" alt="Big Bola" />
     </div>
+    <div className="gc-orbit-item item-8">
+  <img src="/10bet.png" alt="10Bet" />
+</div>
+
+<div className="gc-orbit-item item-9">
+  <img src="/linebet.png" alt="Linebet" />
+</div>
+
+<div className="gc-orbit-item item-10">
+  <img src="/pinup.png" alt="Pin-Up" />
+</div>
   </div>
 </div>
 
