@@ -986,17 +986,17 @@ position: relative;
 ].map((bookie) => (
         <a key={bookie.id} href={bookie.link} target="_blank" rel="noopener noreferrer" className="gc-list-item">
           <div className="gc-list-logo">
-  {bookie.id === 0 ? (
-    <img src="/bcgame3.png" alt="BC Game" />
-  ) : bookie.id === 1 ? (
-    <img src="/novibet.png" alt="Novibet" />
-  ) : bookie.id === 2 ? (
-    <img src="/betway.png" alt="Betway" />
-  ) : bookie.id === 3 ? (
-    <img src="/betwinner1.png" alt="BetWinner" />
-  ) : bookie.id === 4 ? (
-    <img src="/megapari.png" alt="MegaPari" />
-  ) : bookie.id === 5 ? (
+ {bookie.id === 0 ? (
+  <img src="/bcgame3.png" alt="BC Game" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
+) : bookie.id === 1 ? (
+  <img src="/novibet.png" alt="Novibet" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
+) : bookie.id === 2 ? (
+  <img src="/betway.png" alt="Betway" style={{ width: '100%', height: '100%', objectFit: 'contain', padding: '12px' }} />
+) : bookie.id === 3 ? (
+  <img src="/betwinner1.png" alt="BetWinner" style={{ width: '100%', height: '100%', objectFit: 'contain', padding: '12px' }} />
+) : bookie.id === 4 ? (
+  <img src="/megapari.png" alt="MegaPari" style={{ width: '100%', height: '100%', objectFit: 'contain', padding: '12px' }} />
+) : bookie.id === 5 ? (
   <img src="/brazino7777.png" alt="Brazino777" style={{ width: '100%', height: '100%', objectFit: 'contain', padding: '12px' }} />
 ) : bookie.id === 6 ? (
   <img src="/bigbola.png" alt="Big Bola" style={{ width: '100%', height: '100%', objectFit: 'contain', padding: '12px' }} />
@@ -1004,8 +1004,10 @@ position: relative;
   <img src="/10bet.png" alt="10Bet" style={{ width: '100%', height: '100%', objectFit: 'contain', padding: '12px' }} />
 ) : bookie.id === 8 ? (
   <img src="/linebet.png" alt="Linebet" style={{ width: '100%', height: '100%', objectFit: 'contain', padding: '12px' }} />
-) : (
+) : bookie.id === 9 ? (
   <img src="/pinup.png" alt="Pin-Up" style={{ width: '100%', height: '100%', objectFit: 'contain', padding: '12px' }} />
+) : (
+  bookie.name.substring(0, 2).toUpperCase()
 )}
 </div>
 
