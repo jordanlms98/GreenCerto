@@ -821,54 +821,53 @@ position: relative;
 }
 
 .item-1 {
-  top: -29px;
+  top: -30px;
   left: 50%;
   transform: translateX(-50%);
 }
 
 .item-2 {
-  top: 8%;
-  right: -48px;
+  top: 5%;
+  right: 15%;
 }
 
 .item-3 {
-  top: 50%;
-  right: -58px;
-  transform: translateY(-50%);
+  top: 28%;
+  right: -55px;
 }
 
 .item-4 {
-  bottom: 8%;
-  right: 20px;
+  top: 60%;
+  right: -55px;
 }
 
 .item-5 {
-  bottom: 8%;
-  left: 20px;
+  bottom: 5%;
+  right: 15%;
 }
 
 .item-6 {
-  top: 50%;
-  left: -58px;
-  transform: translateY(-50%);
+  bottom: 5%;
+  left: 15%;
 }
 
 .item-7 {
-  top: 8%;
-  left: -48px;
+  top: 60%;
+  left: -55px;
 }
+
 .item-8 {
-  top: 18%;
-  right: -15px;
+  top: 28%;
+  left: -55px;
 }
 
 .item-9 {
-  bottom: 18%;
-  right: -15px;
+  top: 5%;
+  left: 15%;
 }
 
 .item-10 {
-  bottom: -20px;
+  bottom: -30px;
   left: 50%;
   transform: translateX(-50%);
 }
