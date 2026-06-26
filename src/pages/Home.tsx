@@ -52,9 +52,9 @@ i === 0
 : i === 6
 ? 'BigBola te da bônus de bienvenida sin depósito de $400 MXN, más bonificaciones en tus primeros depósitos. Disfruta de apuestas deportivas, casino online y promociones de cumpleaños. Seguridad SEGOB y entretenimiento sin límites.'
 : i === 7
-? '10Bet ofrece apuestas deportivas, casino online y promociones exclusivas para nuevos jugadores. Plataforma internacional con pagos rápidos y amplia variedad de mercados deportivos.'
+? '10bet México: Desde 2003, sua plataforma de apostas esportivas e casino online. Ampla cobertura de esportes como futebol (Liga MX) e casino ao vivo, com cuotas competitivas. Com licença SEGOB e app móvel, garantimos uma experiência segura e moderna. ¡Sua aposta 10/10 começa aqui!'
 : i === 8
-? 'Linebet combina apuestas deportivas, casino y eSports en una plataforma moderna y confiable. Bonos atractivos, cuotas competitivas y soporte disponible las 24 horas.'
+? 'LINEBET: Tu plataforma de apuestas deportivas en México. Disfruta de amplia cobertura en fútbol (incluyendo Liga MX), boxeo y más, con cuotas competitivas. Apuestas en vivo, eventos favoritos y una experiencia segura y móvil. ¡Vive la pasión del deporte con nosotros!'
 : i === 9
 ? 'Pin-Up ofrece casino online, apuestas deportivas y promociones especiales para nuevos usuarios. Diseño moderno, retiros rápidos y una amplia selección de juegos.'
 : 'Agrega aquí el nombre, resumen y enlace de tu casa afiliada.',
