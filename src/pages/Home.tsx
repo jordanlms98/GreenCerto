@@ -69,7 +69,7 @@ link:
     : i === 3
     ? 'https://bwredir.com/2XB6?p=%2Fregistration%2F'
     : i === 4
-    ? 'https://track.afiliapub.com/click?o=49&a=550220643&link_id=528'
+    ? 'https://mx5734543.megapari-667283.com'
     : i === 5
     ? 'https://track.afiliapub.com/click?o=86&a=550220643'
     : i === 6
