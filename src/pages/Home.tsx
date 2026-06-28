@@ -56,7 +56,7 @@ i === 0
 : i === 8
 ? 'LINEBET: Tu plataforma de apuestas deportivas en México. Disfruta de amplia cobertura en fútbol (incluyendo Liga MX), boxeo y más, con cuotas competitivas. Apuestas en vivo, eventos favoritos y una experiencia segura y móvil. ¡Vive la pasión del deporte con nosotros!'
 : i === 9
-? 'Pin-Up ofrece casino online, apuestas deportivas y promociones especiales para nuevos usuarios. Diseño moderno, retiros rápidos y una amplia selección de juegos.'
+? 'Pin-Up ofrece casino online, apuestas deportivas y promociones especiales para nuevos usuarios sujetas a los términos y condiciones de la plataforma. Diseño moderno, retiros rápidos y una amplia selección de juegos.'
 : 'Agrega aquí el nombre, resumen y enlace de tu casa afiliada.',
 
 link:
@@ -79,7 +79,7 @@ link:
    : i === 8
    ? 'https://wow.greatjob.click/click?pid=31250&offer_id=4967&l=1782391212'
    : i === 9
-   ? 'SEU_LINK_PINUP'
+   ? 'https://clickpupnano.com/vd00R80n/?subId2=MX'
     : '#',
 
 isPlaceholder: false,
