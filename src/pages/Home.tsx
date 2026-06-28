@@ -1006,7 +1006,7 @@ position: relative;
     <div className="gc-list-section">
       <h3>Casas de Apuestas Recomendadas</h3>
 
-      [
+      {[
   bookmakers[3], // BetWinner
   bookmakers[4], // MegaPari
   bookmakers[9], // Pin-Up
