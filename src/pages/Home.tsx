@@ -46,7 +46,7 @@ i === 0
 : i === 3
 ? 'Betwinner ofrece apuestas deportivas, casino en vivo y bonos de hasta $2.600 MXN con código promocional en una plataforma rápida y confiable. Duplica tu depósito, obtén giros gratis y acceso a promociones diarias.'
 : i === 4
-? 'Mega Pari ofrece bônus de hasta 230% en deportes o 1.950€ + 150 giros gratis en casino. Código BOLATOP te da hasta $4.400 MXN en tus dos primeros depósitos. Promociones diarias, cashback y recompensas por lealtad.'
+? 'Megapari ofrece un bono de hasta €1,500 en casino, o €1,650 con código promocional. En deportes, el código promocional te ofrece hasta €5,060 de bono. Promociones diarias, cashback y recompensas por lealtad.'
 : i === 5
 ? 'Brazino777 ofrece bônus de hasta 225% en tu primer depósito, con giros gratis y promociones semanales. Recibe cashback, boosters acumuladores y recompensas continuas. Apuestas deportivas y casino en una plataforma confiable con pagos rápidos.'
 : i === 6
