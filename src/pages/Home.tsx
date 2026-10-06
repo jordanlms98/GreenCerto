@@ -61,13 +61,13 @@ i === 0
 
 link:
   i === 0
-    ? 'https://nobreaff.com/api/v3/offer/221?affiliate_id=67&url_id=3826'
+    ? 'https://app.nobrehub.com.br/r/9476003593'
     : i === 1
     ? 'https://rt.novibet.partners/o/gam--3?lpage=8RgePm&site_id=1026014'
     : i === 2
     ? 'https://betway.mx/bwp/casino-welcome-50/es-mx/?s=bfp49683&a=spadid219108'
     : i === 3
-    ? 'https://greencertomx.com/'
+    ? 'https://app.nobrehub.com.br/r/2676294222'
     : i === 4
     ? 'https://mx5734543.megapari-667283.com'
     : i === 5
