@@ -67,7 +67,7 @@ link:
     : i === 2
     ? 'https://betway.mx/bwp/casino-welcome-50/es-mx/?s=bfp49683&a=spadid219108'
     : i === 3
-    ? 'https://bwredir.com/2XB6?p=%2Fregistration%2F'
+    ? 'https://greencertomx.com/'
     : i === 4
     ? 'https://mx5734543.megapari-667283.com'
     : i === 5
